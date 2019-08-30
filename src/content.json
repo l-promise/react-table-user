@@ -1,0 +1,1196 @@
+{
+  "results": {
+    "error": [
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\EggCatcher.cs", 
+        "line": 69, 
+        "subid": "CS_UnityMessageSpellWrong", 
+        "severity": "Critical", 
+        "msg": "Func [onCollisionEnter2D] may be spelled wrong, Do you mean [OnCollisionEnter2D]? Sent when an incoming collider makes contact with this object's collider (2D physics only).", 
+        "web_identify": "{\"identify\":\"onCollisionEnter2D\"}", 
+        "func_info": "public void onCollisionEnter2D ( Collider2D coll , GameObject go )", 
+        "content": "59:   // Update is called once per frame\n60: //  void Update()\n61: //  {\n62: //   if (Input.GetKeyUp (KeyCode.UpArrow)) {\n63: //    endCatch ();\n64: //   } else if (Input.GetKeyDown (KeyCode.DownArrow)) {\n65: //    startCatch ();\n66: //   }\n67: //  }\n68: \n69:   public void onCollisionEnter2D(Collider2D coll, GameObject go) {\n70: //   Debug.LogFormat (\"{3} collison enter : {0}, num contacts : {1}, velocity : {2}\", coll.gameObject.name, coll.contacts.Length, coll.relativeVelocity, go.name);\n71:    startCatch();\n72:   }\n73: \n74:   public void onCollisionStay2D(Collider2D coll, GameObject go){\n75: //   Debug.LogFormat (\"{3} collison stay : {0}, num contacts : {1}, velocity : {2}\", coll.gameObject.name, coll.contacts.Length, coll.relativeVelocity, go.name);\n76:   }\n77: \n78:   public void onCollisionExit2D(Collider2D coll, GameObject go) {\n79: //   Debug.LogFormat (\"{3} collison exit : {0}, num contacts : {1}, velocity : {2}\", coll.gameObject.name, coll.contacts.Length, coll.relativeVelocity, go.name);\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\EggCatcher.cs", 
+        "line": 78, 
+        "subid": "CS_UnityMessageSpellWrong", 
+        "severity": "Critical", 
+        "msg": "Func [onCollisionExit2D] may be spelled wrong, Do you mean [OnCollisionExit2D]? Sent when a collider on another object stops touching this object's collider (2D physics only).", 
+        "web_identify": "{\"identify\":\"onCollisionExit2D\"}", 
+        "func_info": "public void onCollisionExit2D ( Collider2D coll , GameObject go )", 
+        "content": "68: \n69:   public void onCollisionEnter2D(Collider2D coll, GameObject go) {\n70: //   Debug.LogFormat (\"{3} collison enter : {0}, num contacts : {1}, velocity : {2}\", coll.gameObject.name, coll.contacts.Length, coll.relativeVelocity, go.name);\n71:    startCatch();\n72:   }\n73: \n74:   public void onCollisionStay2D(Collider2D coll, GameObject go){\n75: //   Debug.LogFormat (\"{3} collison stay : {0}, num contacts : {1}, velocity : {2}\", coll.gameObject.name, coll.contacts.Length, coll.relativeVelocity, go.name);\n76:   }\n77: \n78:   public void onCollisionExit2D(Collider2D coll, GameObject go) {\n79: //   Debug.LogFormat (\"{3} collison exit : {0}, num contacts : {1}, velocity : {2}\", coll.gameObject.name, coll.contacts.Length, coll.relativeVelocity, go.name);\n80:   }\n81: \n82:   virtual public void startCatch()\n83:   {\n84:    if (_UFO.State != UFO.ClawState.MovingDown)\n85:     return;\n86:    if (_isCatching)\n87:     return;\n88:    _isCatching = true;\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\EggCatcher.cs", 
+        "line": 74, 
+        "subid": "CS_UnityMessageSpellWrong", 
+        "severity": "Critical", 
+        "msg": "Func [onCollisionStay2D] may be spelled wrong, Do you mean [OnCollisionStay2D]? Sent each frame where a collider on another object is touching this object's collider (2D physics only).", 
+        "web_identify": "{\"identify\":\"onCollisionStay2D\"}", 
+        "func_info": "public void onCollisionStay2D ( Collider2D coll , GameObject go )", 
+        "content": "64: //   } else if (Input.GetKeyDown (KeyCode.DownArrow)) {\n65: //    startCatch ();\n66: //   }\n67: //  }\n68: \n69:   public void onCollisionEnter2D(Collider2D coll, GameObject go) {\n70: //   Debug.LogFormat (\"{3} collison enter : {0}, num contacts : {1}, velocity : {2}\", coll.gameObject.name, coll.contacts.Length, coll.relativeVelocity, go.name);\n71:    startCatch();\n72:   }\n73: \n74:   public void onCollisionStay2D(Collider2D coll, GameObject go){\n75: //   Debug.LogFormat (\"{3} collison stay : {0}, num contacts : {1}, velocity : {2}\", coll.gameObject.name, coll.contacts.Length, coll.relativeVelocity, go.name);\n76:   }\n77: \n78:   public void onCollisionExit2D(Collider2D coll, GameObject go) {\n79: //   Debug.LogFormat (\"{3} collison exit : {0}, num contacts : {1}, velocity : {2}\", coll.gameObject.name, coll.contacts.Length, coll.relativeVelocity, go.name);\n80:   }\n81: \n82:   virtual public void startCatch()\n83:   {\n84:    if (_UFO.State != UFO.ClawState.MovingDown)\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\CameraCapture\\TakePhoto.cs", 
+        "line": 16, 
+        "subid": "CS_UnityMessageSpellWrong", 
+        "severity": "Critical", 
+        "msg": "Func [start] may be spelled wrong, Do you mean [Start]? Start is called on the frame when a script is enabled just before any of the Update methods is called the first time.", 
+        "web_identify": "{\"identify\":\"start\"}", 
+        "func_info": "public IEnumerator start ( )", 
+        "content": "6: using System.Threading;\n7: \n8: public class TakePhoto : MonoBehaviour {\n9:     string deviceName;  \n10:     //\u93ba\u30e6\u6579\u6769\u65bf\u6d16\u9428\u52eb\u6d58\u9417\u56e8\u669f\u93b9? \n11:     WebCamTexture tex;\n12:     public Texture2D _tex;\n13:     /// <summary>  \n14:     /// \u93b9\u66e1\u5e4f\u7ed0\u6940\u5f5b\u6d63\u5d87\u7586  \n15:     /// </summary>  \n16:     public IEnumerator start()\n17:     {\n18:         yield return Application.RequestUserAuthorization(UserAuthorization.WebCam);\n19:         if (Application.HasUserAuthorization(UserAuthorization.WebCam))\n20:         {\n21:             WebCamDevice[] devices = WebCamTexture.devices;\n22:             deviceName = devices[0].name;\n23:             tex = new WebCamTexture(deviceName, 300, 300, 12);\n24:             tex.Play();\n25:         }\n26:     }\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\ConfigScript\\BigActivityConfig.cs", 
+        "line": 16, 
+        "subid": "CS_dereferenceAfterNullCheck", 
+        "severity": "Serious", 
+        "msg": "Comparing [m_dictInfos] to null at line 13 implies that [m_dictInfos ]  might be null.Dereferencing null pointer [m_dictInfos].", 
+        "web_identify": "{\"identify\":\"m_dictInfos\"}", 
+        "func_info": "public FB . BigActivity GetBigActivityInfo ( int Id )", 
+        "content": "6: \n7: public class BigActivityConfig : Singleton<BigActivityConfig> {\n8: \n9:     private Dictionary<int, FB.BigActivity> m_dictInfos = new Dictionary<int, FB.BigActivity>();\n10: \n11:     public FB.BigActivity GetBigActivityInfo(int Id)\n12:     {\n13:         if (m_dictInfos == null || m_dictInfos.Count == 0)\n14:             LoadInfos();\n15: \n16:         if (!m_dictInfos.ContainsKey(Id))\n17:             return null;\n18: \n19:         return m_dictInfos[Id];\n20:     }\n21: \n22: \n23:     private void LoadInfos()\n24:     {\n25:         TextAsset tx = GameAssetManager.GetInstance().LoadPrefab(\"protoData/big_activity\") as TextAsset;\n26:         byte[] bytes = tx.bytes;\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\XStudio\\UI\\DlgBigActivity\\BigActivitySend\\DlgBigActivitySend.cs", 
+        "line": 300, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [list] suggests that it may be null, but it has already been dereferenced at line 298.", 
+        "web_identify": "{\"identify\":\"list\"}", 
+        "func_info": "private void UpdateGainItems ( )", 
+        "content": "290:             List<ItemdropsInfo> DropsInfo = GetItemdropsInfo();\n291:             UpdateGainTransf(DropsInfo.Count);\n292:             Transform gainItemsTF = uiBehaviour.m_GainItems.CachedTransform;\n293:             int i = 0;\n294:             for (; i < DropsInfo.Count; i++)\n295:             {\n296:                 gainItemsTF.GetChild(i+1).gameObject.SetActive(true);\n297:                 gainItemsTF.Find(\"GainBg\" + i + \"/GainIcon\" + i).GetComponent<Image>().sprite = ItemInfoMgr.Instance.GetSpriteWithId(DropsInfo[i].id);\n298:                 for(int k = 0; k <= list.Count; k++)\n299:                 {\n300:                     if (list != null && list.Count > 0 && DropsInfo[i].id == list[k].id)\n301:                     {\n302:                         gainItemsTF.Find(\"GainBg\" + i + \"/GainNum\" + i).GetComponent<Text>().text =\n303:                             (string.Format(\"<color=#EA8A2F>{0}</color> <color=#BEFF1F>{1}</color>\", DropsInfo[i].initValue, \"+\" + BigActivityUtil.FloatToPer(list[k].count)));\n304:                         break;\n305:                     }\n306:                     else\n307:                     {\n308:                         gainItemsTF.Find(\"GainBg\" + i + \"/GainNum\" + i).GetComponent<Text>().text =\n309:                             (string.Format(\"<color=#EA8A2F>{0}</color>\", DropsInfo[i].initValue));\n310:                     }\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\XStudio\\UI\\DlgHeroCompound\\DlgHeroCompound.cs", 
+        "line": 221, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [NewGetlist] suggests that it may be null, but it has already been dereferenced at line 174.", 
+        "web_identify": "{\"identify\":\"NewGetlist\"}", 
+        "func_info": "public void InitHero ( List < Bong . Hero > hero , List < Bong . Hero > UpdataHero , List < Bong . Hero > Newhero , Bong . Item _item )", 
+        "content": "211:                             }\n212:                             CompoundheroDic[_hero] = UpdataHero[i];\n213:                             h.Compound(UpdataHero[i]);\n214:                         }\n215:                     }\n216:                 }\n217:             }\n218:          \n219:             //\u9366\u3128\u5e4f\u5bf0\u6940\u5d04\u6d5c\u5c83\u7e5b\u93b6\u501f\u5af3\u95c6\u52ec\u6902  \u9359\ue21d\u5158\u947e\u5cf0\u7df1\u9358\u71b8\u6f75\u5a0c\u2103\u6e41\u9428? \u6d63\u55d8\u69f8\u9357\u4f77\u7c29\u6d93\ue048\u5677\u93c8\u5910\u5678\u6fb6\u5d87\u6b91\u6769\u6d9c\ue511\u6d5c\u55d7\u608e\u93b4?\u704f\u8fab\ue6e6\u6769\u6d9c\ue511\u9422\u71b8\u579a \u9a9e\u5241\u0429\u95c4\u3085\u53cf\u93c2\u62cc\u5e4f\u5bf0\u6943\u6b91\u9352\u6944\u3003\u95b2\u5c80\u6b91\u95b2\u5d85\ue632\n220:             if(UpdataHero!=null && UpdataHero.Count > 0 && \n221:                 NewGetlist != null && NewGetlist.Count > 0)\n222:             {\n223:                 for (int i = NewGetlist.Count-1; i >= 0; i--)\n224:                 {\n225:                     for (int j = UpdataHero.Count-1; j >= 0 ; j--)\n226:                     {\n227:                         if(UpdataHero[j].Id == NewGetlist[i].Id)\n228:                         {\n229:                             Hero h = InitInfonew(UpdataHero[j]);\n230:                             HeroComPoundINFo _hero = new HeroComPoundINFo();\n231:                             _hero.ID = (int)h.Id;\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\XStudio\\UI\\DlgNumberConfirm.cs", 
+        "line": 68, 
+        "subid": "CS_dereferenceAfterNullCheck", 
+        "severity": "Serious", 
+        "msg": "Comparing [m_FormatItem] to null at line 49 implies that [m_FormatItem ]  might be null.Dereferencing null pointer [m_FormatItem].", 
+        "web_identify": "{\"identify\":\"m_FormatItem\"}", 
+        "func_info": "protected override void OnShow ( )", 
+        "content": "58:             m_nFinalBuyCount = iptInitNum;\n59:             uiBehaviour.m_ipt_Number.SetText(iptInitNum.ToString());\n60: \n61:             uiBehaviour.m_lbl_MaxBuyCount.SetText(string.Format(\"\u9410\u7470\u56ae\u9359\ue21d\u7ded\u934f\u30e5\u53ac\u93b9\u3221\u669f\u95b2\u5fe5\u7d19\u93c8\u20ac\u6fb6\ue7410}\u951b?quot;, m_nMaxBuyCount.ToString()));\n62:             if (m_nTotalBuyCount > 0)\n63:                 uiBehaviour.m_lbl_AlreadyBuyCount.SetText(string.Format(\"({0}/{1})\", m_nAlreadyBuyCount, m_nTotalBuyCount));\n64:             else\n65:                 uiBehaviour.m_lbl_AlreadyBuyCount.SetText(m_nAlreadyBuyCount.ToString());\n66: \n67:             uiBehaviour.m_lbl_RemainCount.SetText(m_nTargetItemOwnCount.ToString());\n68:             uiBehaviour.m_lbl_ItemCount.SetText(m_FormatItem.count.ToString());\n69: \n70:             SoundManager.Instance.playSoundUI(SoundManagerFromResoure.UI_BigActivity_TipWindow);\n71:         }\n72: \n73:         private bool OnClickBtnClose(IXUIObject uiButton)\n74:         {\n75:             DlgNumberConfirm.singleton.SetVisible(false);\n76:             SoundManager.Instance.playCloseSound();\n77:             return true;\n78:         }\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\ThirdParty\\AntiCheatToolkit\\Scripts\\Detectors\\WallHackDetector.cs", 
+        "line": 961, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [wfCamera] suggests that it may be null, but it has already been dereferenced at line 939.", 
+        "web_identify": "{\"identify\":\"wfCamera\"}", 
+        "func_info": "private IEnumerator CaptureFrame ( )", 
+        "content": "951:    RenderTexture.active = previousActive;\n952: \n953: #if WALLHACK_DEBUG\n954:    if (thinWall != null) thinWall.GetComponent<Renderer>().enabled = true;\n955:    if (solidWall != null) solidWall.GetComponent<Renderer>().enabled = true;\n956:    if (charControllerPlayer != null) charControllerPlayer.GetComponent<Renderer>().enabled = true;\n957:    if (rigidPlayer != null) rigidPlayer.GetComponent<Renderer>().enabled = true;\n958: #endif\n959: \n960:    // in case we've deactivated detector while waiting for a frame\n961:    if (wfCamera == null) yield return null;\n962: \n963:    wfCamera.enabled = false;\n964: \n965:    //yield return new WaitForEndOfFrame();\n966: \n967:    bool detected = (targetTexture.GetPixel(0, 3) != wfColor1 ||\n968:       targetTexture.GetPixel(0, 1) != wfColor2 ||\n969:       targetTexture.GetPixel(3, 3) != wfColor1 ||\n970:       targetTexture.GetPixel(3, 1) != wfColor2 ||\n971:       targetTexture.GetPixel(1, 3) != wfColor1 ||\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\EnemySpawnPool.cs", 
+        "line": 37, 
+        "subid": "CS_dereferenceAfterNullCheck", 
+        "severity": "Serious", 
+        "msg": "Comparing [enemy] to null at line 34 implies that [enemy ]  might be null.Dereferencing null pointer [enemy].", 
+        "web_identify": "{\"identify\":\"enemy\"}", 
+        "func_info": "public void Reclaim ( GameObject obj )", 
+        "content": "27:         else\n28:             return null;\n29:     }\n30: \n31:     public void Reclaim(GameObject obj)\n32:     {\n33:         var enemy = obj.GetComponent<Enemy>();\n34:         if(null != enemy &&\n35:             null != enemy.UnitTF)\n36:             enemy.UnitTF.localPosition = Vector3.zero;\n37:         var idx = enemy.Index;\n38:         if (!m_dictEnemy.ContainsKey(idx))\n39:         {\n40:             m_dictEnemy[idx] = new Queue<GameObject>();\n41:         }\n42: \n43:         obj.SetActive(false);\n44:         m_dictEnemy[idx].Enqueue(obj);\n45:     }\n46: }\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\ConfigScript\\HeroSkillCfgConfig.cs", 
+        "line": 68, 
+        "subid": "CS_dereferenceAfterNullCheck", 
+        "severity": "Serious", 
+        "msg": "Comparing [m_dictHeroSkillCfg] to null at line 64 implies that [m_dictHeroSkillCfg ]  might be null.Dereferencing null pointer [m_dictHeroSkillCfg].", 
+        "web_identify": "{\"identify\":\"m_dictHeroSkillCfg\"}", 
+        "func_info": "public HeroSkillCfgDetail GetHeroSkillCfg ( MyCode . Unit h )", 
+        "content": "58:         {\n59:             var hId = 0;\n60: \n61:             if (h is Hero)\n62:                 hId = (h as Hero).UnitId;\n63: \n64:             if (null == m_dictHeroSkillCfg ||\n65:                 m_dictHeroSkillCfg.Count == 0)\n66:                 LoadItems();\n67: \n68:             if (m_dictHeroSkillCfg.ContainsKey(hId))\n69:                 return m_dictHeroSkillCfg[hId];\n70:             else\n71:                 return null;\n72:         }\n73: \n74:         public void Clear()\n75:         {\n76:             m_dictHeroSkillCfg.Clear();\n77:         }\n78: \n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Fabric\\Kits\\Crashlytics\\Runtime\\Internal\\Impl.cs", 
+        "line": 59, 
+        "subid": "CS_explicitNullDereference", 
+        "severity": "Critical", 
+        "msg": "Dereferencing null pointer [s], [s] is assigned with null at line 58.", 
+        "web_identify": "{\"identify\":\"s\"}", 
+        "func_info": "public virtual void ThrowNonFatal ( )", 
+        "content": "49:   \n50:   public virtual void Crash()\n51:   {\n52:    Utils.Log (KitName, \"Method Crash () is unimplemented on this platform\");\n53:   }\n54:   \n55:   public virtual void ThrowNonFatal()\n56:   {\n57:    #if !UNITY_EDITOR\n58:    string s = null;\n59:    string l = s.ToLower ();\n60:    Utils.Log (KitName, l);\n61:    #else\n62:    Utils.Log (KitName, \"Method ThrowNonFatal () is not invokable from the context of the editor\");\n63:    #endif\n64:   }\n65:   \n66:   public virtual void Log(string message)\n67:   {\n68:    Utils.Log (KitName, \"Would log custom message if running on a physical device: \" + message);\n69:   }\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\Network\\Proto\\GameNetManager.cs", 
+        "line": 150, 
+        "subid": "CS_dereferenceAfterNullCheck", 
+        "severity": "Serious", 
+        "msg": "Comparing [recommand_server] to null at line 145 implies that [recommand_server ]  might be null.Dereferencing null pointer [recommand_server].", 
+        "web_identify": "{\"identify\":\"recommand_server\"}", 
+        "func_info": "IEnumerator GetOpenServerList ( )", 
+        "content": "140:             GameDataInst.Instance.Serverlist = JsonMapper.ToObject<GameDataInst.ServerJson>(_www.text);\n141:             //LitJson.JsonData result = LitJson.JsonMapper.ToObject(_www.text);\n142:             // if (DlgServerSelect.IsInstExists())\n143:             // {\n144:                 GameDataInst.RecommandServerInfo recommand_server = GameDataInst.Instance.Serverlist.data.recommand_server;\n145:                 if (null != recommand_server)\n146:                 {\n147:                     Debug.Log(\"\u93ba\u3128\u5d18\u93c8\u5d85\u59df\u9363\u3124\u7b09\u6d93\u8679\u2516\u951b?quot;);\n148:                 }\n149: \n150:                 SetRealIpAndPort(recommand_server.ip, recommand_server.port.ToString(), recommand_server.server_id.ToString());\n151:                 DlgServerSelect.singleton.Load();\n152:                 DlgServerSelect.singleton.InitData();\n153:                 DlgLogin.singleton.SetSelectServerName(recommand_server.server_name, recommand_server.server_id);\n154:                 DlgLogin.singleton.ShowLoginBtn();\n155: \n156:                 var svlist = GameDataInst.Instance.Serverlist.data.server_list;\n157:                 for (int i = 0; i < svlist.Count; ++i)\n158:                 {\n159:                     if (svlist[i].server_id == recommand_server.server_id)\n160:                     {\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\Network\\Proto\\GameNetManager.cs", 
+        "line": 531, 
+        "subid": "CS_dereferenceAfterNullCheck", 
+        "severity": "Serious", 
+        "msg": "Comparing [serverSelect] to null at line 520 implies that [serverSelect ]  might be null.Dereferencing null pointer [serverSelect].", 
+        "web_identify": "{\"identify\":\"serverSelect\"}", 
+        "func_info": "public void SendLogin ( )", 
+        "content": "521:                     !LocalUpdateInfo.Singleton.ServerUrlValid)\n522:                 {\n523:                     DlgAlert.singleton.ShowInfo(StrInfoMgr.Instance.GetStr(\"WarningTitle\"),\n524:                         StrInfoMgr.Instance.GetStr(\"NoServer\"), null);\n525:                     return;\n526:                 }\n527:                 else\n528:                 {\n529:                     if (!LocalUpdateInfo.Singleton.ServerUrlValid)\n530:                     {\n531:                         sdkdata.ServerId = serverSelect.server_id;\n532:                         sdkdata.opSid = serverSelect.op_sid;\n533:                         sdkdata.ServerName = serverSelect.server_name;\n534:                     }\n535:                     else\n536:                     {\n537:                         var inServerInfo = DlgServerSelect.singleton.m_lastTestServer;\n538:                         sdkdata.ServerId = inServerInfo.server_id.ToString();\n539:                         //sdkdata.opSid = inServerInfo.op_sid;\n540:                         sdkdata.ServerName = inServerInfo.server_name;\n541: \n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\Network\\Proto\\GameNetManager.cs", 
+        "line": 2875, 
+        "subid": "CS_dereferenceAfterNullCheck", 
+        "severity": "Serious", 
+        "msg": "Comparing [res] to null at line 2872 implies that [res ]  might be null.Dereferencing null pointer [res].", 
+        "web_identify": "{\"identify\":\"res\"}", 
+        "func_info": "void OnBigActivityBattleSuccess ( PassBigActivityLevelResponse res )", 
+        "content": "2865:         }\n2866: \n2867: \n2868:     }\n2869: \n2870:     void OnBigActivityBattleSuccess(PassBigActivityLevelResponse res)\n2871:     {\n2872:         if (res == null ||\n2873:             res.Ec != 0)\n2874:         {\n2875:    DlgAlert.singleton.Show(\"\u93bb\u612e\u305a\", \"\u7f01\u64b6\u757b\u95bf\u6b12\ue1e4 : \" + res.Ec, () =>\n2876:             {\n2877:                 BigActivityBattleController.Instance.ExitScene();\n2878:                 GameData.Instance.RootObject.SetActive(true);\n2879:                 GameData.Instance.ShowMainSceneElements();\n2880:             });\n2881:         }\n2882:         else\n2883:         {\n2884:             BigActivityManager.Instance.m_compoundInfo.InitCompoundInfo(res.Heroes, res.NewHeros, res.UpdateHeros, res.CombineItem);\n2885:    var isMainActivity = BigActivityManager.Instance.IsMainActivity;\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\XStudio\\UI\\DlgHeroCompound\\HeroCompoundInfo.cs", 
+        "line": 151, 
+        "subid": "CS_dereferenceAfterNullCheck", 
+        "severity": "Serious", 
+        "msg": "Comparing [Oldhero] to null at line 123 implies that [Oldhero ]  might be null.Dereferencing null pointer [Oldhero].", 
+        "web_identify": "{\"identify\":\"Oldhero\"}", 
+        "func_info": "void newHero ( Bong . Hero _hero )", 
+        "content": "141:                 \n142:                 int index = (int)(EBuffType)_hero.Chips[i].Type;\n143:                 Sprite img = Resources.Load<Sprite>(\"Textures/Chips/COMP_\" + index);\n144:                 listChipImage[i].sprite = img;\n145: \n146:                 listChipImage[i].gameObject.SetActive(true);\n147:                 listChip[i].gameObject.SetActive(false);\n148:             }\n149: \n150: \n151:             for (int i = Oldhero.ChipCount; i < _hero.Chips.Count; i++)\n152:             {\n153:                 if (i >= listChipImage.Count || _hero.Chips[i].Id == 0)\n154:                     break;\n155:                 listChipSys[i].gameObject.SetActive(true);\n156:             }\n157: \n158:         }\n159: \n160:         //\u7ecb\u20ac\u93c8\u590a\u5bb3\u6769\u6d98\u5bb3\u93c9?   \n161:         float rate=0;\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\UI\\HeroLvStarDispaly.cs", 
+        "line": 76, 
+        "subid": "CS_dereferenceAfterNullCheck", 
+        "severity": "Serious", 
+        "msg": "Comparing [LV] to null at line 73 implies that [LV ]  might be null.Dereferencing null pointer [LV].", 
+        "web_identify": "{\"identify\":\"LV\"}", 
+        "func_info": "public void Show ( )", 
+        "content": "66:     public bool isOpen;                                     \n67: \n68:     public void Show()\n69:     {\n70:         if (CurHero == null)\n71:             return;\n72: \n73:         if (LV != null && LV.gameObject.activeSelf)\n74:             return;\n75: \n76:         LV.SetActive(true);\n77:     }\n78: \n79:     public void Close()\n80:     {\n81:         if (CurHero == null)\n82:             return;\n83: \n84:         if (LV != null && !LV.gameObject.activeSelf)\n85:             return;\n86: \n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\UI\\HeroLvStarDispaly.cs", 
+        "line": 87, 
+        "subid": "CS_dereferenceAfterNullCheck", 
+        "severity": "Serious", 
+        "msg": "Comparing [LV] to null at line 84 implies that [LV ]  might be null.Dereferencing null pointer [LV].", 
+        "web_identify": "{\"identify\":\"LV\"}", 
+        "func_info": "public void Close ( )", 
+        "content": "77:     }\n78: \n79:     public void Close()\n80:     {\n81:         if (CurHero == null)\n82:             return;\n83: \n84:         if (LV != null && !LV.gameObject.activeSelf)\n85:             return;\n86: \n87:         LV.SetActive(false);\n88:     }\n89: \n90:     // Update is called once per frame\n91:     void Update ()\n92:     {\n93:         if (CurHero.Level != level)\n94:             isUpada = true;\n95:         else\n96:             return;\n97: \n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\CLR\\Method\\CLRMethod.cs", 
+        "line": 116, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [def] suggests that it may be null, but it has already been dereferenced at line 112.", 
+        "web_identify": "{\"identify\":\"def\"}", 
+        "func_info": "internal CLRMethod ( MethodInfo def , CLRType type , ILRuntime . Runtime . Enviorment . AppDomain domain )", 
+        "content": "106:                 ReturnType = domain.GetType(def.ReturnType.FullName);\n107:                 if (ReturnType == null)\n108:                 {\n109:                     ReturnType = domain.GetType(def.ReturnType.AssemblyQualifiedName);\n110:                 }\n111:             }\n112:             if (type.IsDelegate && def.Name == \"Invoke\")\n113:                 isDelegateInvoke = true;\n114:             isConstructor = false;\n115: \n116:             if (def != null)\n117:             {\n118:                 if (def.IsGenericMethod && !def.IsGenericMethodDefinition)\n119:                 {\n120:                     //Redirection of Generic method Definition will be prioritized\n121:                     if(!appdomain.RedirectMap.TryGetValue(def.GetGenericMethodDefinition(), out redirect))\n122:                         appdomain.RedirectMap.TryGetValue(def, out redirect);\n123:                 }\n124:                 else\n125:                     appdomain.RedirectMap.TryGetValue(def, out redirect);\n126:             }\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\CLR\\Method\\CLRMethod.cs", 
+        "line": 140, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [def] suggests that it may be null, but it has already been dereferenced at line 134.", 
+        "web_identify": "{\"identify\":\"def\"}", 
+        "func_info": "internal CLRMethod ( ConstructorInfo def , CLRType type , ILRuntime . Runtime . Enviorment . AppDomain domain )", 
+        "content": "130:             this.cDef = def;\n131:             declaringType = type;\n132:             this.appdomain = domain;\n133:             param = def.GetParameters();\n134:             if (!def.ContainsGenericParameters)\n135:             {\n136:                 ReturnType = type;\n137:             }\n138:             isConstructor = true;\n139: \n140:             if (def != null)\n141:             {\n142:                 appdomain.RedirectMap.TryGetValue(cDef, out redirect);\n143:             }\n144:         }\n145: \n146:         public int ParameterCount\n147:         {\n148:             get\n149:             {\n150:                 return param != null ? param.Length : 0;\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\CLR\\Method\\ILMethod.cs", 
+        "line": 611, 
+        "subid": "CS_dereferenceAfterNullCheck", 
+        "severity": "Serious", 
+        "msg": "Comparing [type] to null at line 591 implies that [type ]  might be null.Dereferencing null pointer [type].", 
+        "web_identify": "{\"identify\":\"type\"}", 
+        "func_info": "void InitParameters ( )", 
+        "content": "601:                         }\n602:                         if (found)\n603:                         {\n604:                             type = new ILGenericParameterType(pt.Name);\n605:                         }\n606:                         else\n607:                             throw new NotSupportedException(\"Cannot find Generic Parameter \" + pt.Name + \" in \" + def.FullName);\n608:                     }\n609: \n610:                     if (isByRef)\n611:                         type = type.MakeByRefType();\n612:                     if (isArray)\n613:                         type = type.MakeArrayType(rank);\n614:                 }\n615:                 else\n616:                     type = appdomain.GetType(i.ParameterType, declaringType, this);\n617:                 parameters.Add(type);\n618:             }\n619:         }\n620: \n621:         public IMethod MakeGenericMethod(IType[] genericArguments)\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\CLR\\TypeSystem\\CLRType.cs", 
+        "line": 618, 
+        "subid": "CS_dereferenceAfterNullCheck", 
+        "severity": "Serious", 
+        "msg": "Comparing [genericArguments] to null at line 582 implies that [genericArguments ]  might be null.Dereferencing null pointer [genericArguments].", 
+        "web_identify": "{\"identify\":\"genericArguments\"}", 
+        "func_info": "public IMethod GetMethod ( string name , List < IType > param , IType [ ] genericArguments , IType returnType = null , bool declaredOnly = false )", 
+        "content": "608:                                 catch\n609:                                 {\n610: \n611:                                 }\n612:                             }\n613:                             if (match)\n614:                             {\n615: \n616:                                 if (i.IsGenericInstance)\n617:                                 {\n618:                                     if (i.GenericArguments.Length == genericArguments.Length)\n619:                                     {\n620:                                         for (int j = 0; j < genericArguments.Length; j++)\n621:                                         {\n622:                                             if (i.GenericArguments[j] != genericArguments[j])\n623:                                             {\n624:                                                 match = false;\n625:                                                 break;\n626:                                             }\n627:                                         }\n628:                                         if (match)\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\CLR\\Utils\\Extensions.cs", 
+        "line": 53, 
+        "subid": "CS_dereferenceAfterNullCheck", 
+        "severity": "Serious", 
+        "msg": "Comparing [t] to null at line 49 implies that [t ]  might be null.Dereferencing null pointer [t].", 
+        "web_identify": "{\"identify\":\"t\"}", 
+        "func_info": "public static List < IType > GetParamList ( this MethodReference def , ILRuntime . Runtime . Enviorment . AppDomain appdomain , IType contextType , IMethod contextMethod , IType [ ] genericArguments )", 
+        "content": "43:                                     t = genericArguments[j];\n44:                                 break;\n45:                             }\n46:                             else if (name.Contains(gp.Name))\n47:                             {\n48:                                 t = appdomain.GetType(ga, contextType, contextMethod);\n49:                                 if (t == null && genericArguments != null)\n50:                                     t = genericArguments[j];\n51:                                 if (name == gp.Name + \"[]\")\n52:                                 {\n53:                                     name = t.FullName + \"[]\";\n54:                                 }\n55:                                 else\n56:                                 {\n57:                                     /*name = name.Replace(\"<\" + gp.Name + \">\", \"<\" + ga.FullName + \">\");\n58:                                     name = name.Replace(\"<\" + gp.Name + \"[\", \"<\" + ga.FullName + \"[\");\n59:                                     name = name.Replace(\"<\" + gp.Name + \",\", \"<\" + ga.FullName + \",\");\n60:                                     name = name.Replace(\",\" + gp.Name + \">\", \",\" + ga.FullName + \">\");\n61:                                     name = name.Replace(\",\" + gp.Name + \"[\", \",\" + ga.FullName + \"[\");\n62:                                     name = name.Replace(\",\" + gp.Name + \",\", \",\" + ga.FullName + \",\");\n63:                                     name = name.Replace(\",\" + gp.Name + \"[\", \",\" + ga.FullName + \"[\");*/\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\Runtime\\Debugger\\DebugService.cs", 
+        "line": 926, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [obj] suggests that it may be null, but it has already been dereferenced at line 925.", 
+        "web_identify": "{\"identify\":\"obj\"}", 
+        "func_info": "unsafe bool GetValueExpandable ( StackObject * esp , IList < object > mStack )", 
+        "content": "916:             return VariableInfo.GetCannotFind(name);\n917:         }\n918: \n919:         unsafe bool GetValueExpandable(StackObject* esp, IList<object> mStack)\n920:         {\n921:             if (esp->ObjectType < ObjectTypes.Object)\n922:                 return false;\n923:             else\n924:             {\n925:                 var obj = mStack[esp->Value];\n926:                 if (obj == null)\n927:                     return false;\n928:                 if (obj is ILTypeInstance)\n929:                     return true;\n930:                 else if (obj.GetType().IsPrimitive)\n931:                     return false;\n932:                 else\n933:                     return true;\n934: \n935:             }\n936:         }\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\Runtime\\Enviorment\\AppDomain.cs", 
+        "line": 650, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [name] suggests that it may be null, but it has already been dereferenced at line 648.", 
+        "web_identify": "{\"identify\":\"name\"}", 
+        "func_info": "internal static void ParseGenericType ( string fullname , out string baseType , out List < string > genericParams , out bool isArray )", 
+        "content": "640:                             sb.Length = 0;\n641:                             genericParams = new List<string>();\n642:                             continue;\n643:                         }\n644:                     }\n645:                     if (i == ',' && depth == 1)\n646:                     {\n647:                         string name = sb.ToString();\n648:                         if (name.StartsWith(\"[\"))\n649:                             name = name.Substring(1, name.Length - 2);\n650:                         if (!string.IsNullOrEmpty(name))\n651:                             genericParams.Add(name);\n652:                         sb.Length = 0;\n653:                         continue;\n654:                     }\n655:                     if (i == '>' || i == ']')\n656:                     {\n657:                         depth--;\n658:                         if (depth == 0)\n659:                         {\n660:                             string name = sb.ToString();\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\Runtime\\Enviorment\\AppDomain.cs", 
+        "line": 663, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [name] suggests that it may be null, but it has already been dereferenced at line 661.", 
+        "web_identify": "{\"identify\":\"name\"}", 
+        "func_info": "internal static void ParseGenericType ( string fullname , out string baseType , out List < string > genericParams , out bool isArray )", 
+        "content": "653:                         continue;\n654:                     }\n655:                     if (i == '>' || i == ']')\n656:                     {\n657:                         depth--;\n658:                         if (depth == 0)\n659:                         {\n660:                             string name = sb.ToString();\n661:                             if (name.StartsWith(\"[\"))\n662:                                 name = name.Substring(1, name.Length - 2);\n663:                             if (!string.IsNullOrEmpty(name))\n664:                                 genericParams.Add(name);\n665:                             else\n666:                             {\n667:                                 if (!isArray)\n668:                                 {\n669:                                     isArray = true;\n670:                                 }\n671:                                 else\n672:                                 {\n673:                                     baseType += \"[]\";\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\Runtime\\Enviorment\\AppDomain.cs", 
+        "line": 686, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [genericParams] suggests that it may be null, but it has already been dereferenced at line 651.", 
+        "web_identify": "{\"identify\":\"genericParams\"}", 
+        "func_info": "internal static void ParseGenericType ( string fullname , out string baseType , out List < string > genericParams , out bool isArray )", 
+        "content": "676:                             sb.Length = 0;\n677:                             continue;\n678:                         }\n679:                     }\n680:                     sb.Append(i);\n681:                 }\n682:                 if (sb.Length > 0)\n683:                 {\n684:                     baseType += sb.ToString();\n685:                 }\n686:                 if (genericParams != null && genericParams.Count == 0)\n687:                     genericParams = null;\n688:             }\n689:             else\n690:                 baseType = fullname;\n691:         }\n692: \n693:         string GetAssemblyName(IMetadataScope scope)\n694:         {\n695:             return scope is AssemblyNameReference ? ((AssemblyNameReference)scope).FullName : null;\n696:         }\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\Runtime\\Enviorment\\CLRRedirections.cs", 
+        "line": 55, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [t] suggests that it may be null, but it has already been dereferenced at line 53.", 
+        "web_identify": "{\"identify\":\"t\"}", 
+        "func_info": "public static StackObject * CreateInstance2 ( ILIntepreter intp , StackObject * esp , IList < object > mStack , CLRMethod method , bool isNewObj )", 
+        "content": "45:             }\n46:             else\n47:                 throw new EntryPointNotFoundException();\n48:         }*/\n49: \n50:         public static StackObject* CreateInstance2(ILIntepreter intp, StackObject* esp, IList<object> mStack, CLRMethod method, bool isNewObj)\n51:         {\n52:             var p = esp - 1;\n53:             var t = mStack[p->Value] as Type;\n54:             intp.Free(p);\n55:             if (t != null)\n56:             {\n57:                 if (t is ILRuntimeType)\n58:                 {\n59:                     return ILIntepreter.PushObject(p, mStack, ((ILRuntimeType)t).ILType.Instantiate());\n60:                 }\n61:                 else\n62:                     return ILIntepreter.PushObject(p, mStack, Activator.CreateInstance(t));\n63:             }\n64:             else\n65:                 return ILIntepreter.PushNull(p);\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\Runtime\\Enviorment\\CLRRedirections.cs", 
+        "line": 91, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [t] suggests that it may be null, but it has already been dereferenced at line 87.", 
+        "web_identify": "{\"identify\":\"t\"}", 
+        "func_info": "public static StackObject * CreateInstance3 ( ILIntepreter intp , StackObject * esp , IList < object > mStack , CLRMethod method , bool isNewObj )", 
+        "content": "81:                 return null;\n82:         }*/\n83: \n84:         public static StackObject* CreateInstance3(ILIntepreter intp, StackObject* esp, IList<object> mStack, CLRMethod method, bool isNewObj)\n85:         {\n86:             var p = esp - 1 - 1;\n87:             var t = mStack[p->Value] as Type;\n88:             var p2 = esp - 1;\n89:             var t2 = mStack[p2->Value] as Object[];\n90:             intp.Free(p);\n91:             if (t != null)\n92:             {\n93:                 for (int i = 0; i < t2.Length; i++)\n94:                 {\n95:                     if (t2[i] == null)\n96:                     {\n97:                         throw new ArgumentNullException();\n98:                     }\n99:                 }\n100: \n101:                 if (t is ILRuntimeType)\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\Runtime\\Intepreter\\DelegateAdapter.cs", 
+        "line": 934, 
+        "subid": "CS_explicitNullDereference", 
+        "severity": "Critical", 
+        "msg": "Dereferencing null pointer [retObj], [retObj] is assigned with null at line 925.", 
+        "web_identify": "{\"identify\":\"retObj\"}", 
+        "func_info": "unsafe StackObject * ClearStack ( ILIntepreter intp , StackObject * esp , StackObject * ebp , IList < object > mStack )", 
+        "content": "924:             int paramCnt = method.ParameterCount;\n925:             object retObj = null;\n926:             StackObject retSObj = StackObject.Null;\n927:             bool hasReturn = method.ReturnType != appdomain.VoidType;\n928:             if (hasReturn)\n929:             {\n930:                 var ret = esp - 1;\n931:                 retSObj = *ret;\n932:                 if(ret->ObjectType>= ObjectTypes.Object)\n933:                 {\n934:                     retObj = mStack[ret->Value];\n935:                     if(retObj == null)\n936:                     {\n937:                         retSObj.ObjectType = ObjectTypes.Null;\n938:                         retSObj.Value = -1;\n939:                         retSObj.ValueLow = 0;\n940:                     }\n941:                 }\n942:                 intp.Free(ret);\n943:             }\n944:             for (int i = 1; i <= paramCnt; i++)\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\Runtime\\Intepreter\\ILIntepreter.cs", 
+        "line": 1732, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [obj] suggests that it may be null, but it has already been dereferenced at line 1731.", 
+        "web_identify": "{\"identify\":\"obj\"}", 
+        "func_info": "internal StackObject * Execute ( ILMethod method , StackObject * esp , out bool unhandledException )", 
+        "content": "1722:                                                         throw new NullReferenceException();\n1723:                                                     if (objRef->ObjectType == ObjectTypes.ValueTypeObjectReference)\n1724:                                                     {\n1725:                                                         StackObject* dst = *(StackObject**)&objRef->Value;\n1726:                                                         var ft = domain.GetType(dst->Value) as ILType;\n1727:                                                         ilm = ft.GetVirtualMethod(ilm) as ILMethod;\n1728:                                                     }\n1729:                                                     else\n1730:                                                     {\n1731:                                                         var obj = mStack[objRef->Value];\n1732:                                                         if (obj == null)\n1733:                                                             throw new NullReferenceException();\n1734:                                                         ilm = ((ILTypeInstance)obj).Type.GetVirtualMethod(ilm) as ILMethod;\n1735:                                                     }                                                    \n1736:                                                 }\n1737:                                                 esp = Execute(ilm, esp, out unhandledException);\n1738:                                                 ValueTypeBasePointer = bp;\n1739:                                                 if (unhandledException)\n1740:                                                     returned = true;\n1741:                                             }\n1742:                                         }\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\Runtime\\Intepreter\\ILIntepreter.cs", 
+        "line": 2885, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [obj] suggests that it may be null, but it has already been dereferenced at line 2883.", 
+        "web_identify": "{\"identify\":\"obj\"}", 
+        "func_info": "internal StackObject * Execute ( ILMethod method , StackObject * esp , out bool unhandledException )", 
+        "content": "2875:                                 }\n2876:                                 break;\n2877:                             case OpCodeEnum.Unbox:\n2878:                             case OpCodeEnum.Unbox_Any:\n2879:                                 {\n2880:                                     var objRef = esp - 1;\n2881:                                     if (objRef->ObjectType == ObjectTypes.Object)\n2882:                                     {\n2883:                                         object obj = mStack[objRef->Value];\n2884:                                         Free(objRef);\n2885:                                         if (obj != null)\n2886:                                         {\n2887:                                             var t = domain.GetType(ip->TokenInteger);\n2888:                                             if (t != null)\n2889:                                             {\n2890:                                                 var type = t.TypeForCLR;\n2891:                                                 bool isEnumObj = obj is ILEnumTypeInstance;\n2892:                                                 if ((t is CLRType) && type.IsPrimitive && !isEnumObj)\n2893:                                                 {\n2894:                                                     if (type == typeof(int))\n2895:                                                     {\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\Runtime\\Intepreter\\ILIntepreter.cs", 
+        "line": 3029, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [obj] suggests that it may be null, but it has already been dereferenced at line 3028.", 
+        "web_identify": "{\"identify\":\"obj\"}", 
+        "func_info": "internal StackObject * Execute ( ILMethod method , StackObject * esp , out bool unhandledException )", 
+        "content": "3019:                                             switch (objRef->ObjectType)\n3020:                                             {\n3021:                                                 case ObjectTypes.Null:\n3022:                                                     throw new NullReferenceException();\n3023:                                                 case ObjectTypes.ValueTypeObjectReference:\n3024:                                                     stack.ClearValueTypeObject(type, *(StackObject**)&objRef->Value);\n3025:                                                     break;\n3026:                                                 case ObjectTypes.Object:\n3027:                                                     {\n3028:                                                         var obj = mStack[objRef->Value];\n3029:                                                         if (obj != null)\n3030:                                                         {\n3031:                                                             if (obj is ILTypeInstance)\n3032:                                                             {\n3033:                                                                 ILTypeInstance instance = obj as ILTypeInstance;\n3034:                                                                 instance.Clear();\n3035:                                                             }\n3036:                                                             else\n3037:                                                                 throw new NotSupportedException();\n3038:                                                         }\n3039:                                                         else\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\Runtime\\Intepreter\\ILIntepreter.cs", 
+        "line": 3065, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [obj] suggests that it may be null, but it has already been dereferenced at line 3064.", 
+        "web_identify": "{\"identify\":\"obj\"}", 
+        "func_info": "internal StackObject * Execute ( ILMethod method , StackObject * esp , out bool unhandledException )", 
+        "content": "3055:                                                                 instance.Clear();\n3056:                                                             }\n3057:                                                             else\n3058:                                                                 throw new NotImplementedException();\n3059:                                                         }\n3060:                                                     }\n3061:                                                     break;\n3062:                                                 case ObjectTypes.FieldReference:\n3063:                                                     {\n3064:                                                         var obj = mStack[objRef->Value];\n3065:                                                         if (obj != null)\n3066:                                                         {\n3067:                                                             if (obj is ILTypeInstance)\n3068:                                                             {\n3069:                                                                 ILTypeInstance instance = obj as ILTypeInstance;\n3070:                                                                 var tar = instance[objRef->ValueLow] as ILTypeInstance;\n3071:                                                                 if (tar != null)\n3072:                                                                     tar.Clear();\n3073:                                                                 else\n3074:                                                                     throw new NotSupportedException();\n3075:                                                             }\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\Runtime\\Intepreter\\ILIntepreter.cs", 
+        "line": 3071, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [tar] suggests that it may be null, but it has already been dereferenced at line 3070.", 
+        "web_identify": "{\"identify\":\"tar\"}", 
+        "func_info": "internal StackObject * Execute ( ILMethod method , StackObject * esp , out bool unhandledException )", 
+        "content": "3061:                                                     break;\n3062:                                                 case ObjectTypes.FieldReference:\n3063:                                                     {\n3064:                                                         var obj = mStack[objRef->Value];\n3065:                                                         if (obj != null)\n3066:                                                         {\n3067:                                                             if (obj is ILTypeInstance)\n3068:                                                             {\n3069:                                                                 ILTypeInstance instance = obj as ILTypeInstance;\n3070:                                                                 var tar = instance[objRef->ValueLow] as ILTypeInstance;\n3071:                                                                 if (tar != null)\n3072:                                                                     tar.Clear();\n3073:                                                                 else\n3074:                                                                     throw new NotSupportedException();\n3075:                                                             }\n3076:                                                             else\n3077:                                                                 throw new NotSupportedException();\n3078:                                                         }\n3079:                                                         else\n3080:                                                             throw new NullReferenceException();\n3081:                                                     }\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\Runtime\\Intepreter\\ILIntepreter.cs", 
+        "line": 3408, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [arr] suggests that it may be null, but it has already been dereferenced at line 3407.", 
+        "web_identify": "{\"identify\":\"arr\"}", 
+        "func_info": "internal StackObject * Execute ( ILMethod method , StackObject * esp , out bool unhandledException )", 
+        "content": "3398:                                     else\n3399:                                         esp = PushObject(esp - 1 - 1, mStack, val, !arr.GetType().GetElementType().IsPrimitive);\n3400:                                 }\n3401:                                 break;\n3402:                             case OpCodeEnum.Stelem_I1:\n3403:                                 {\n3404:                                     var val = esp - 1;\n3405:                                     var idx = esp - 1 - 1;\n3406:                                     var arrRef = esp - 1 - 1 - 1;\n3407:                                     byte[] arr = mStack[arrRef->Value] as byte[];\n3408:                                     if (arr != null)\n3409:                                     {\n3410:                                         arr[idx->Value] = (byte)val->Value;\n3411:                                     }\n3412:                                     else\n3413:                                     {\n3414:                                         bool[] arr2 = mStack[arrRef->Value] as bool[];\n3415:                                         if (arr2 != null)\n3416:                                         {\n3417:                                             arr2[idx->Value] = val->Value == 1;\n3418:                                         }\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\Runtime\\Intepreter\\ILIntepreter.cs", 
+        "line": 3415, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [arr2] suggests that it may be null, but it has already been dereferenced at line 3414.", 
+        "web_identify": "{\"identify\":\"arr2\"}", 
+        "func_info": "internal StackObject * Execute ( ILMethod method , StackObject * esp , out bool unhandledException )", 
+        "content": "3405:                                     var idx = esp - 1 - 1;\n3406:                                     var arrRef = esp - 1 - 1 - 1;\n3407:                                     byte[] arr = mStack[arrRef->Value] as byte[];\n3408:                                     if (arr != null)\n3409:                                     {\n3410:                                         arr[idx->Value] = (byte)val->Value;\n3411:                                     }\n3412:                                     else\n3413:                                     {\n3414:                                         bool[] arr2 = mStack[arrRef->Value] as bool[];\n3415:                                         if (arr2 != null)\n3416:                                         {\n3417:                                             arr2[idx->Value] = val->Value == 1;\n3418:                                         }\n3419:                                         else\n3420:                                         {\n3421:                                             sbyte[] arr3 = mStack[arrRef->Value] as sbyte[];\n3422:                                             arr3[idx->Value] = (sbyte)val->Value;\n3423:                                         }\n3424:                                     }\n3425:                                     Free(esp - 1);\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\Runtime\\Intepreter\\ILIntepreter.cs", 
+        "line": 3437, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [arr] suggests that it may be null, but it has already been dereferenced at line 3435.", 
+        "web_identify": "{\"identify\":\"arr\"}", 
+        "func_info": "internal StackObject * Execute ( ILMethod method , StackObject * esp , out bool unhandledException )", 
+        "content": "3427:                                     Free(esp - 1 - 1 - 1);\n3428:                                     esp = esp - 1 - 1 - 1;\n3429:                                 }\n3430:                                 break;\n3431:                             case OpCodeEnum.Ldelem_I1:\n3432:                                 {\n3433:                                     var idx = esp - 1;\n3434:                                     var arrRef = esp - 1 - 1;\n3435:                                     bool[] arr = mStack[arrRef->Value] as bool[];\n3436:                                     int val;\n3437:                                     if (arr != null)\n3438:                                         val = arr[idx->Value] ? 1 : 0;\n3439:                                     else\n3440:                                     {\n3441:                                         sbyte[] arr2 = mStack[arrRef->Value] as sbyte[];\n3442:                                         val = arr2[idx->Value];\n3443:                                     }\n3444: \n3445:                                     Free(esp - 1);\n3446:                                     Free(esp - 1 - 1);\n3447: \n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\Runtime\\Intepreter\\ILIntepreter.cs", 
+        "line": 3459, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [arr] suggests that it may be null, but it has already been dereferenced at line 3457.", 
+        "web_identify": "{\"identify\":\"arr\"}", 
+        "func_info": "internal StackObject * Execute ( ILMethod method , StackObject * esp , out bool unhandledException )", 
+        "content": "3449:                                     arrRef->Value = val;\n3450:                                     esp -= 1;\n3451:                                 }\n3452:                                 break;\n3453:                             case OpCodeEnum.Ldelem_U1:\n3454:                                 {\n3455:                                     var idx = (esp - 1);\n3456:                                     var arrRef = esp - 1 - 1;\n3457:                                     byte[] arr = mStack[arrRef->Value] as byte[];\n3458:                                     int val;\n3459:                                     if (arr != null)\n3460:                                         val = arr[idx->Value];\n3461:                                     else\n3462:                                     {\n3463:                                         bool[] arr2 = mStack[arrRef->Value] as bool[];\n3464:                                         val = arr2[idx->Value] ? 1 : 0;\n3465:                                     }\n3466:                                     Free(esp - 1);\n3467:                                     Free(esp - 1 - 1);\n3468: \n3469:                                     arrRef->ObjectType = ObjectTypes.Integer;\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\Runtime\\Intepreter\\ILIntepreter.cs", 
+        "line": 3480, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [arr] suggests that it may be null, but it has already been dereferenced at line 3479.", 
+        "web_identify": "{\"identify\":\"arr\"}", 
+        "func_info": "internal StackObject * Execute ( ILMethod method , StackObject * esp , out bool unhandledException )", 
+        "content": "3470:                                     arrRef->Value = val;\n3471:                                     esp -= 1;\n3472:                                 }\n3473:                                 break;\n3474:                             case OpCodeEnum.Stelem_I2:\n3475:                                 {\n3476:                                     var val = esp - 1;\n3477:                                     var idx = esp - 1 - 1;\n3478:                                     var arrRef = esp - 1 - 1 - 1;\n3479:                                     short[] arr = mStack[arrRef->Value] as short[];\n3480:                                     if (arr != null)\n3481:                                     {\n3482:                                         arr[idx->Value] = (short)val->Value;\n3483:                                     }\n3484:                                     else\n3485:                                     {\n3486:                                         ushort[] arr2 = mStack[arrRef->Value] as ushort[];\n3487:                                         if (arr2 != null)\n3488:                                         {\n3489:                                             arr2[idx->Value] = (ushort)val->Value;\n3490:                                         }\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\Runtime\\Intepreter\\ILIntepreter.cs", 
+        "line": 3487, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [arr2] suggests that it may be null, but it has already been dereferenced at line 3486.", 
+        "web_identify": "{\"identify\":\"arr2\"}", 
+        "func_info": "internal StackObject * Execute ( ILMethod method , StackObject * esp , out bool unhandledException )", 
+        "content": "3477:                                     var idx = esp - 1 - 1;\n3478:                                     var arrRef = esp - 1 - 1 - 1;\n3479:                                     short[] arr = mStack[arrRef->Value] as short[];\n3480:                                     if (arr != null)\n3481:                                     {\n3482:                                         arr[idx->Value] = (short)val->Value;\n3483:                                     }\n3484:                                     else\n3485:                                     {\n3486:                                         ushort[] arr2 = mStack[arrRef->Value] as ushort[];\n3487:                                         if (arr2 != null)\n3488:                                         {\n3489:                                             arr2[idx->Value] = (ushort)val->Value;\n3490:                                         }\n3491:                                         else\n3492:                                         {\n3493:                                             char[] arr3 = mStack[arrRef->Value] as char[];\n3494:                                             arr3[idx->Value] = (char)val->Value;\n3495:                                         }\n3496:                                     }\n3497:                                     Free(esp - 1);\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\Runtime\\Intepreter\\ILIntepreter.cs", 
+        "line": 3509, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [arr] suggests that it may be null, but it has already been dereferenced at line 3507.", 
+        "web_identify": "{\"identify\":\"arr\"}", 
+        "func_info": "internal StackObject * Execute ( ILMethod method , StackObject * esp , out bool unhandledException )", 
+        "content": "3499:                                     Free(esp - 1 - 1 - 1);\n3500:                                     esp = esp - 1 - 1 - 1;\n3501:                                 }\n3502:                                 break;\n3503:                             case OpCodeEnum.Ldelem_I2:\n3504:                                 {\n3505:                                     var idx = (esp - 1)->Value;\n3506:                                     var arrRef = esp - 1 - 1;\n3507:                                     short[] arr = mStack[arrRef->Value] as short[];\n3508:                                     int val = 0;\n3509:                                     if (arr != null)\n3510:                                     {\n3511:                                         val = arr[idx];\n3512:                                     }\n3513:                                     else\n3514:                                     {\n3515:                                         char[] arr2 = mStack[arrRef->Value] as char[];\n3516:                                         val = arr2[idx];\n3517:                                     }\n3518:                                     Free(esp - 1);\n3519:                                     Free(esp - 1 - 1);\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\Runtime\\Intepreter\\ILIntepreter.cs", 
+        "line": 3532, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [arr] suggests that it may be null, but it has already been dereferenced at line 3530.", 
+        "web_identify": "{\"identify\":\"arr\"}", 
+        "func_info": "internal StackObject * Execute ( ILMethod method , StackObject * esp , out bool unhandledException )", 
+        "content": "3522:                                     arrRef->Value = val;\n3523:                                     esp -= 1;\n3524:                                 }\n3525:                                 break;\n3526:                             case OpCodeEnum.Ldelem_U2:\n3527:                                 {\n3528:                                     var idx = (esp - 1)->Value;\n3529:                                     var arrRef = esp - 1 - 1;\n3530:                                     ushort[] arr = mStack[arrRef->Value] as ushort[];\n3531:                                     int val = 0;\n3532:                                     if (arr != null)\n3533:                                     {\n3534:                                         val = arr[idx];\n3535:                                     }\n3536:                                     else\n3537:                                     {\n3538:                                         char[] arr2 = mStack[arrRef->Value] as char[];\n3539:                                         val = arr2[idx];\n3540:                                     }\n3541:                                     Free(esp - 1);\n3542:                                     Free(esp - 1 - 1);\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\Runtime\\Intepreter\\ILIntepreter.cs", 
+        "line": 3555, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [arr] suggests that it may be null, but it has already been dereferenced at line 3554.", 
+        "web_identify": "{\"identify\":\"arr\"}", 
+        "func_info": "internal StackObject * Execute ( ILMethod method , StackObject * esp , out bool unhandledException )", 
+        "content": "3545:                                     arrRef->Value = val;\n3546:                                     esp -= 1;\n3547:                                 }\n3548:                                 break;\n3549:                             case OpCodeEnum.Stelem_I4:\n3550:                                 {\n3551:                                     var val = esp - 1;\n3552:                                     var idx = esp - 1 - 1;\n3553:                                     var arrRef = esp - 1 - 1 - 1;\n3554:                                     int[] arr = mStack[arrRef->Value] as int[];\n3555:                                     if (arr != null)\n3556:                                     {\n3557:                                         arr[idx->Value] = val->Value;\n3558:                                     }\n3559:                                     else\n3560:                                     {\n3561:                                         uint[] arr2 = mStack[arrRef->Value] as uint[];\n3562:                                         arr2[idx->Value] = (uint)val->Value;\n3563:                                     }\n3564:                                     Free(esp - 1);\n3565:                                     Free(esp - 1 - 1);\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\Runtime\\Intepreter\\ILIntepreter.cs", 
+        "line": 3604, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [arr] suggests that it may be null, but it has already been dereferenced at line 3603.", 
+        "web_identify": "{\"identify\":\"arr\"}", 
+        "func_info": "internal StackObject * Execute ( ILMethod method , StackObject * esp , out bool unhandledException )", 
+        "content": "3594:                                     arrRef->Value = (int)arr[idx];\n3595:                                     esp -= 1;\n3596:                                 }\n3597:                                 break;\n3598:                             case OpCodeEnum.Stelem_I8:\n3599:                                 {\n3600:                                     var val = esp - 1;\n3601:                                     var idx = esp - 1 - 1;\n3602:                                     var arrRef = esp - 1 - 1 - 1;\n3603:                                     long[] arr = mStack[arrRef->Value] as long[];\n3604:                                     if (arr != null)\n3605:                                     {\n3606:                                         arr[idx->Value] = *(long*)&val->Value;\n3607:                                     }\n3608:                                     else\n3609:                                     {\n3610:                                         ulong[] arr2 = mStack[arrRef->Value] as ulong[];\n3611:                                         arr2[idx->Value] = *(ulong*)&val->Value;\n3612:                                     }\n3613:                                     Free(esp - 1);\n3614:                                     Free(esp - 1 - 1);\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\Runtime\\Intepreter\\ILIntepreter.cs", 
+        "line": 3625, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [arr] suggests that it may be null, but it has already been dereferenced at line 3623.", 
+        "web_identify": "{\"identify\":\"arr\"}", 
+        "func_info": "internal StackObject * Execute ( ILMethod method , StackObject * esp , out bool unhandledException )", 
+        "content": "3615:                                     Free(esp - 1 - 1 - 1);\n3616:                                     esp = esp - 1 - 1 - 1;\n3617:                                 }\n3618:                                 break;\n3619:                             case OpCodeEnum.Ldelem_I8:\n3620:                                 {\n3621:                                     var idx = esp - 1;\n3622:                                     var arrRef = esp - 1 - 1;\n3623:                                     long[] arr = mStack[arrRef->Value] as long[];\n3624:                                     long val;\n3625:                                     if (arr != null)\n3626:                                         val = arr[idx->Value];\n3627:                                     else\n3628:                                     {\n3629:                                         ulong[] arr2 = mStack[arrRef->Value] as ulong[];\n3630:                                         val = (long)arr2[idx->Value];\n3631:                                     }\n3632:                                     Free(esp - 1);\n3633:                                     Free(esp - 1 - 1);\n3634: \n3635:                                     arrRef->ObjectType = ObjectTypes.Long;\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\Runtime\\Intepreter\\ILIntepreter.cs", 
+        "line": 4325, 
+        "subid": "CS_explicitNullDereference", 
+        "severity": "Critical", 
+        "msg": "Dereferencing null pointer [obj], [obj] is assigned with null at line 4321.", 
+        "web_identify": "{\"identify\":\"obj\"}", 
+        "func_info": "public object RetriveObject ( StackObject * esp , IList < object > mStack )", 
+        "content": "4315: \n4316:         public object RetriveObject(StackObject* esp, IList<object> mStack)\n4317:         {\n4318:             StackObject* objRef = GetObjectAndResolveReference(esp);\n4319:             if (objRef->ObjectType == ObjectTypes.Null)\n4320:                 return null;\n4321:             object obj = null;\n4322:             switch (objRef->ObjectType)\n4323:             {\n4324:                 case ObjectTypes.Object:\n4325:                     obj = mStack[objRef->Value];\n4326:                     break;\n4327:                 case ObjectTypes.FieldReference:\n4328:                     {\n4329:                         obj = mStack[objRef->Value];\n4330:                         int idx = objRef->ValueLow;\n4331:                         if (obj is ILTypeInstance)\n4332:                         {\n4333:                             obj = ((ILTypeInstance)obj)[idx];\n4334:                         }\n4335:                         else\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\Runtime\\Intepreter\\ILIntepreter.cs", 
+        "line": 4389, 
+        "subid": "CS_explicitNullDereference", 
+        "severity": "Critical", 
+        "msg": "Dereferencing null pointer [obj], [obj] is assigned with null at line 4377.", 
+        "web_identify": "{\"identify\":\"obj\"}", 
+        "func_info": "public int RetriveInt32 ( StackObject * esp , IList < object > mStack )", 
+        "content": "4379:             switch (objRef->ObjectType)\n4380:             {\n4381:                 case ObjectTypes.Object:\n4382:                     res = (int)mStack[objRef->Value];\n4383:                     break;\n4384:                 case ObjectTypes.Integer:\n4385:                     res = objRef->Value;\n4386:                     break;\n4387:                 case ObjectTypes.FieldReference:\n4388:                     {\n4389:                         obj = mStack[objRef->Value];\n4390:                         int idx = objRef->ValueLow;\n4391:                         if (obj is ILTypeInstance)\n4392:                         {\n4393:                             res = ((ILTypeInstance)obj).Fields[idx].Value;\n4394:                         }\n4395:                         else\n4396:                         {\n4397:                             var t = AppDomain.GetType(obj.GetType());\n4398:                             res = (int)((CLRType)t).GetFieldValue(idx, obj);\n4399:                         }\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\Runtime\\Intepreter\\ILIntepreter.cs", 
+        "line": 4451, 
+        "subid": "CS_explicitNullDereference", 
+        "severity": "Critical", 
+        "msg": "Dereferencing null pointer [obj], [obj] is assigned with null at line 4439.", 
+        "web_identify": "{\"identify\":\"obj\"}", 
+        "func_info": "public long RetriveInt64 ( StackObject * esp , IList < object > mStack )", 
+        "content": "4441:             switch (objRef->ObjectType)\n4442:             {\n4443:                 case ObjectTypes.Object:\n4444:                     res = (long)mStack[objRef->Value];\n4445:                     break;\n4446:                 case ObjectTypes.Long:\n4447:                     res = *(long*)&objRef->Value;\n4448:                     break;\n4449:                 case ObjectTypes.FieldReference:\n4450:                     {\n4451:                         obj = mStack[objRef->Value];\n4452:                         int idx = objRef->ValueLow;\n4453:                         if (obj is ILTypeInstance)\n4454:                         {\n4455:                             StackObject so = ((ILTypeInstance)obj).Fields[idx];\n4456:                             res = *(long*)&so.Value;\n4457:                         }\n4458:                         else\n4459:                         {\n4460:                             var t = AppDomain.GetType(obj.GetType());\n4461:                             res = (long)((CLRType)t).GetFieldValue(idx, obj);\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\Runtime\\Intepreter\\ILIntepreter.cs", 
+        "line": 4515, 
+        "subid": "CS_explicitNullDereference", 
+        "severity": "Critical", 
+        "msg": "Dereferencing null pointer [obj], [obj] is assigned with null at line 4503.", 
+        "web_identify": "{\"identify\":\"obj\"}", 
+        "func_info": "public float RetriveFloat ( StackObject * esp , IList < object > mStack )", 
+        "content": "4505:             switch (objRef->ObjectType)\n4506:             {\n4507:                 case ObjectTypes.Object:\n4508:                     res = (float)mStack[objRef->Value];\n4509:                     break;\n4510:                 case ObjectTypes.Float:\n4511:                     res = *(float*)&objRef->Value;\n4512:                     break;\n4513:                 case ObjectTypes.FieldReference:\n4514:                     {\n4515:                         obj = mStack[objRef->Value];\n4516:                         int idx = objRef->ValueLow;\n4517:                         if (obj is ILTypeInstance)\n4518:                         {\n4519:                             StackObject so = ((ILTypeInstance)obj).Fields[idx];\n4520:                             res = *(float*)&so.Value;\n4521:                         }\n4522:                         else\n4523:                         {\n4524:                             var t = AppDomain.GetType(obj.GetType());\n4525:                             res = (float)((CLRType)t).GetFieldValue(idx, obj);\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\Runtime\\Intepreter\\ILIntepreter.cs", 
+        "line": 4579, 
+        "subid": "CS_explicitNullDereference", 
+        "severity": "Critical", 
+        "msg": "Dereferencing null pointer [obj], [obj] is assigned with null at line 4567.", 
+        "web_identify": "{\"identify\":\"obj\"}", 
+        "func_info": "public double RetriveDouble ( StackObject * esp , IList < object > mStack )", 
+        "content": "4569:             switch (objRef->ObjectType)\n4570:             {\n4571:                 case ObjectTypes.Object:\n4572:                     res = (double)mStack[objRef->Value];\n4573:                     break;\n4574:                 case ObjectTypes.Double:\n4575:                     res = *(double*)&objRef->Value;\n4576:                     break;\n4577:                 case ObjectTypes.FieldReference:\n4578:                     {\n4579:                         obj = mStack[objRef->Value];\n4580:                         int idx = objRef->ValueLow;\n4581:                         if (obj is ILTypeInstance)\n4582:                         {\n4583:                             StackObject so = ((ILTypeInstance)obj).Fields[idx];\n4584:                             res = *(double*)&so.Value;\n4585:                         }\n4586:                         else\n4587:                         {\n4588:                             var t = AppDomain.GetType(obj.GetType());\n4589:                             res = (double)((CLRType)t).GetFieldValue(idx, obj);\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\ILRuntime\\Runtime\\Intepreter\\ILTypeInstance.cs", 
+        "line": 488, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [managedObjs] suggests that it may be null, but it has already been dereferenced at line 463.", 
+        "web_identify": "{\"identify\":\"managedObjs\"}", 
+        "func_info": "unsafe void AssignFromStackSub ( ref StackObject field , int fieldIdx , StackObject * esp , IList < object > managedStack )", 
+        "content": "478:                             child.AssignFromStack(esp, domain, managedStack);\n479:                         }\n480:                         else\n481:                         {\n482:                             managedObjs[fieldIdx] = ((CLRType)vt).ValueTypeBinder.ToObject(dst, managedStack);\n483:                         }\n484:                         \n485:                     }\n486:                     break;\n487:                 default:\n488:                     if (managedObjs != null)\n489:                         managedObjs[fieldIdx] = null;\n490:                     break;\n491:             }\n492:         }\n493: \n494:        \n495:         public override string ToString()\n496:         {\n497:             var m = type.ToStringMethod;\n498:             if (m != null)\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\SoundFX\\InteractiveMusicPlayer\\MusicSwitch.cs", 
+        "line": 112, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [_currentMusic] suggests that it may be null, but it has already been dereferenced at line 110.", 
+        "web_identify": "{\"identify\":\"_currentMusic\"}", 
+        "func_info": "public void SetSwitch ( string switchName )", 
+        "content": "102:    {\n103:     if (_currentSwitchName == \"\") return;\n104:     foreach (var track in _switchList)\n105:     {\n106:      if (track.SwitchName == _currentSwitchName)\n107:      {      \n108:       if (PlayingStatus != PlayStatus.Idle) //if a track is already playing, trigger the transition\n109:       {\n110:        _currentMusic.TransitionTo(track.Music);\n111:       }\n112:       if (_currentMusic != null) _currentMusic.LoopCallback -= ResetPlayhead;\n113:       _currentMusic = track.Music; //update the switched music after transition event\n114:       _currentMusic.LoopCallback += ResetPlayhead;\n115:       CopyPositionSettings(_currentMusic);\n116:       PlayCallback = _currentMusic.Play; //set the track to play as the switched track\n117:       StopCallback = _currentMusic.Stop;      \n118:       return;\n119:      }\n120:     }    \n121:     Debug.LogError(MusicManager.Instance.GetObjectPath(gameObject) + \": Can't find music by switch name \" + _currentSwitchName); \n122:    }     \n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\UI\\LevelList.cs", 
+        "line": 142, 
+        "subid": "CS_dereferenceAfterNullCheck", 
+        "severity": "Serious", 
+        "msg": "Comparing [btnSlt] to null at line 93 implies that [btnSlt ]  might be null.Dereferencing null pointer [btnSlt].", 
+        "web_identify": "{\"identify\":\"btnSlt\"}", 
+        "func_info": "public LevelListObj ( int idx , int areaId , GameObject mdl , Bong . ChapterLevel lvInfo , LevelList lvList )", 
+        "content": "132:             }\n133: \n134:             if (name)\n135:                 name.text = strName;\n136: \n137:             if (nameCur)\n138:                 nameCur.text = strName;\n139: \n140:             OnHighLight(false);\n141: \n142:             btnSlt.onClick.AddListener(() =>\n143:             {\n144:                 UIControl.Instance.Map.JumpToMap(m_nAreaId);\n145:                 m_parent.Close();\n146:             });\n147:         }\n148: \n149:         public void OnHighLight(bool high)\n150:         {\n151:             btnSlt.gameObject.SetActive(!high);\n152:             btnSltCur.gameObject.SetActive(high);\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Mono.Cecil.20\\MonoCecil\\Mono.Cecil\\TypeParser.cs", 
+        "line": 178, 
+        "subid": "CS_dereferenceIfNull", 
+        "severity": "Critical", 
+        "msg": "[array] is null dereferenced here, as codes at line 176 make it a null pointer.", 
+        "web_identify": "{\"identify\":\"array\"}", 
+        "func_info": "static void Add < T > ( ref T [ ] array , T item )", 
+        "content": "168:                 return true;\n169:             }\n170: \n171:             return false;\n172:         }\n173: \n174:         static void Add<T>(ref T[] array, T item)\n175:         {\n176:             if (array == null)\n177:             {\n178:                 array = new[] { item };\n179:                 return;\n180:             }\n181: \n182: #if !CF\n183:             Array.Resize(ref array, array.Length + 1);\n184: #else\n185:    var copy = new T [array.Length + 1];\n186:    Array.Copy (array, copy, array.Length);\n187:    array = copy;\n188: #endif\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\SPAtk\\AreaPassiveSkill.cs", 
+        "line": 113, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [unit] suggests that it may be null, but it has already been dereferenced at line 110.", 
+        "web_identify": "{\"identify\":\"unit\"}", 
+        "func_info": "void CheckPassiveSkill ( )", 
+        "content": "103:                 if (ToEnemyBuffId > -1)\n104:                 {\n105:                     List<Unit> list = GetALLUnit(Owner,true);\n106: \n107:                     for (int i = list.Count - 1; i >= 0; i--)\n108:                     {\n109:                         var unit = list[i];\n110:                         float dis = Vector2.Distance(unit.RealPos, Owner.RealPos);\n111:                         if (dis <= R)\n112:                         {\n113:                             if (unit == null || unit.IsDragging || unit.IsDead)\n114:                                 continue;\n115: \n116:                             unit.addBuffFromScript(ToEnemyBuffId, Owner);\n117:                             EnemyunitCache.Add(unit);\n118:                         }\n119:                         else\n120:                         {\n121:                             if (unit != null && unit.haveBuff(ToEnemyBuffId) && !unit.IsDead)\n122:                             {\n123:                                 unit.removeBuff(ToEnemyBuffId);\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\SPAtk\\AreaPassiveSkill.cs", 
+        "line": 141, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [unit] suggests that it may be null, but it has already been dereferenced at line 138.", 
+        "web_identify": "{\"identify\":\"unit\"}", 
+        "func_info": "void CheckPassiveSkill ( )", 
+        "content": "131: \n132:                 if (ToPartnerBuffId > -1)\n133:                 {\n134:                     List<Unit> list = GetALLUnit(Owner);\n135:                     for (int i = list.Count - 1; i >= 0; i--)\n136:                     {\n137:                         var unit = list[i];\n138:                         float dis = Vector2.Distance(unit.RealPos, Owner.RealPos);\n139:                         if (dis <= R)\n140:                         {\n141:                             if (unit == null || unit.IsDragging || unit.IsDead)\n142:                                 continue;\n143: \n144:                             unit.addBuffFromScript(ToPartnerBuffId, Owner);\n145:                             EnemyunitCache.Add(unit);\n146:                         }\n147:                         else\n148:                         {\n149:                             if (unit != null && unit.haveBuff(ToPartnerBuffId) && !unit.IsDead)\n150:                             {\n151:                                 unit.removeBuff(ToPartnerBuffId);\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\UI\\BackgroundController.cs", 
+        "line": 392, 
+        "subid": "CS_dereferenceAfterNullCheck", 
+        "severity": "Serious", 
+        "msg": "Comparing [_effector] to null at line 379 implies that [_effector ]  might be null.Dereferencing null pointer [_effector].", 
+        "web_identify": "{\"identify\":\"_effector\"}", 
+        "func_info": "MyCode.BackgroundController", 
+        "content": "382:                     for (int i = 0; i < BattleFieldManager.Instance.OpenBfCount; ++i)\n383:                     {\n384:                         var bftype = BattleFieldManager.Instance.GetBattleFieldTypeByIndex(i + 1);\n385:                         if (!BattleFieldManager.Instance.DictBFs.ContainsKey(bftype)) {\n386:                             continue;\n387:                         }\n388:                         BattleField bf = BattleFieldManager.Instance.DictBFs[bftype];\n389:                         switch (lvInfo.Index - 1)\n390:                         {\n391:                             case 0:\n392:                                 _effector.Add(new SceneEffect1(bf));\n393:                                 break;\n394:                             case 1:\n395:                                 _effector.Add(new SceneEffect2(bf));\n396:                                 break;\n397:                             case 2:\n398:                                 _effector.Add(new SceneEffect3(bf));\n399:                                 break;\n400:                             case 3:\n401:                                 _effector.Add(new SceneEffect4(bf));\n402:                                 break;\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\UI\\BackgroundController.cs", 
+        "line": 427, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [_effector] suggests that it may be null, but it has already been dereferenced at line 425.", 
+        "web_identify": "{\"identify\":\"_effector\"}", 
+        "func_info": "private void RunEffectorFunction ( EffectorFunction function )", 
+        "content": "417: \n418:         private void ClearAllEffector() {\n419:             RunEffectorFunction(EffectorFunction.Finish);\n420:             _effector.Clear();\n421:         }\n422: \n423:         private void RunEffectorFunction(EffectorFunction function)\n424:         {\n425:             for (int i = 0; i < _effector.Count; i++)\n426:             {\n427:                 if (_effector != null)\n428:                 {\n429:                     switch (function) {\n430:                         case EffectorFunction.Start:\n431:                             _effector[i].Start();\n432:                             break;\n433:                         case EffectorFunction.Finish:\n434:                             _effector[i].Finish();\n435:                             break;\n436:                         case EffectorFunction.Update:\n437:                             _effector[i].Update();\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\Field\\BattleField.cs", 
+        "line": 678, 
+        "subid": "CS_dereferenceAfterNullCheck", 
+        "severity": "Serious", 
+        "msg": "Comparing [e] to null at line 665 implies that [e ]  might be null.Dereferencing null pointer [e].", 
+        "web_identify": "{\"identify\":\"e\"}", 
+        "func_info": "public void clearField ( bool bClearHero = false )", 
+        "content": "668:                     {\n669:                         if ((e as Hero)._Shark[i] != null)\n670:                         {\n671:                             Destroy((e as Hero)._Shark[i].gameObject);\n672:                         }\n673:                     }\n674:                     (e as Hero)._Shark.Clear();\n675:                     e.ClearBullet();\n676:                 }\n677:                 base.removeUnit(e);\n678:                 Destroy(e.gameObject);\n679:             }\n680:             _enemies.Clear();\n681:             isGeneratingEnemy = false;\n682: \n683:             if (!bClearHero)\n684:                 return;\n685: \n686:             foreach (var h in _heroes)\n687:             {\n688:                 if (h != null)\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\Bullets\\BounceBullet.cs", 
+        "line": 61, 
+        "subid": "CS_dereferenceAfterNullCheck", 
+        "severity": "Serious", 
+        "msg": "Comparing [_owner] to null at line 56 implies that [_owner ]  might be null.Dereferencing null pointer [_owner].", 
+        "web_identify": "{\"identify\":\"_owner\"}", 
+        "func_info": "public override void onHit ( )", 
+        "content": "51:   public override void onHit()\n52:   {\n53:    if (_target != null && !_target.IsDead) {\n54:     _startPos = _target.RealPos;\n55:     _startPos.z = _target.Height;\n56:     if (_owner && !_owner.IsDead)\n57:      _owner.doDmg (_target, DmgMulti, Flags, 0, 0, _dizzyTime);\n58: \n59:                 if (HallMarkID > -1)\n60:                 {\n61:                     _target.addHallMark(HallMarkID, _owner, HallMarkAtkNum);\n62:                 }\n63:                 if (AddBUffID > -1)\n64:                 {\n65:                     _target.addBuff(AddBUffID, _owner, AddBUffAtkScale);\n66:                 }\n67: \n68:             } else if (IsLaunched) {\n69:     float z = _startPos.z;\n70:     _startPos = _bullet.LocalPos;\n71:     _startPos.z = z;\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\UI\\EggInfoUIShop.cs", 
+        "line": 450, 
+        "subid": "CS_dereferenceAfterNullCheck", 
+        "severity": "Serious", 
+        "msg": "Comparing [curItem.NetHero] to null at line 389 implies that [curItem.NetHero ]  might be null.Dereferencing null pointer [curItem.NetHero].", 
+        "web_identify": "{\"identify\":\"curItem.NetHero\"}", 
+        "func_info": "private void setupInfoBigEgg ( )", 
+        "content": "440:                     }\n441: \n442:                     var animxx = go.GetComponent<SkeletonAnimation>();\n443:                     if (animxx)\n444:                         animxx.enabled = true;\n445: \n446:                     Vector3 pos = go.transform.localPosition;\n447:                     pos.y -= 1f;\n448:                     go.transform.localPosition = pos;\n449:                     Hero h = (Hero)curItem.egg;\n450:                     ShowHeroStars(curItem.NetHero.QualityId, h.UnitId);\n451:                     _name.text = StrInfoMgr.Instance.GetStr(\"H\" + curItem.egg.UnitId);\n452:                     _info.text = StrInfoMgr.Instance.GetStr(\"a\" + curItem.egg.UnitId);\n453: \n454:                     back.gameObject.SetActive(true);\n455:                     for (int i = 0; i < back.childCount; ++i)\n456:                     {\n457:                         back.GetChild(i).gameObject.SetActive(i == (curItem.egg.EggId - 1));\n458:                     }\n459: \n460: \n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\UI\\EggMenuUI.cs", 
+        "line": 151, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [_hero] suggests that it may be null, but it has already been dereferenced at line 86.", 
+        "web_identify": "{\"identify\":\"_hero\"}", 
+        "func_info": "void Update ( )", 
+        "content": "141:                     _lastCost = count;\n142:                 }\n143:             }\n144:             else\n145:             {\n146:                 float timeLeft = _hero.TimeLeft;\n147:                 _totalCostNeeded = Mathf.CeilToInt((timeLeft) / kTimeDecrease) * kBlueStarPerTime;\n148:                 _costText.text = _totalCostNeeded.ToString();\n149:             }\n150: \n151:             if (_hero != null && _hero.transform.hasChanged)\n152:             {\n153:                 _hero.transform.hasChanged = false;\n154:                 Vector3 pos = _hero.transform.position;\n155:                 pos.y += 1f;\n156:                 transform.position = pos;\n157:             }\n158:         }\n159: \n160:         void OnSpeedupIncubationResponse(bool success, object o)\n161:         {\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\UI\\EggMenuUI.cs", 
+        "line": 304, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [_hero] suggests that it may be null, but it has already been dereferenced at line 297 in function[SpeedupIncubation].", 
+        "web_identify": "{\"identify\":\"_hero\"}", 
+        "func_info": "public bool close ( bool isOver )", 
+        "content": "294:             {\n295:                 int count = Mathf.CeilToInt(_timeDecreased / kTimeDecrease) * kBlueStarPerTime;\n296: \n297:                 GameNetManager.Instance.SpeedupIncubation(_hero, count, OnSpeedupIncubationResponse);\n298:             }\n299: \n300:             if (isOver || d.TutorialStep != 5 || (d.TutorialSubStep != 0 && d.TutorialSubStep != 3))\n301:             {\n302:              \n303:                 gameObject.SetActive(false);\n304:                 if (null != _hero)\n305:                 {\n306:                     _hero.stopSound();\n307:                 }\n308:             }\n309:             else\n310:             {\n311:                 return false;\n312:             }\n313: \n314:             return true;\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\UI\\EggMenuUI.cs", 
+        "line": 384, 
+        "subid": "CS_dereferenceAfterNullCheck", 
+        "severity": "Serious", 
+        "msg": "Comparing [h] to null at line 372 implies that [h ]  might be null.Dereferencing null pointer [h].", 
+        "web_identify": "{\"identify\":\"h\"}", 
+        "func_info": "public void show ( Unit h , bool bShow )", 
+        "content": "374:     pos.y += 1f;\n375:     transform.position = pos;\n376:    }\n377: \n378:    _lastCost = 0;\n379:    _speed = _hero.RebirthTime * 0.3f;\n380:    float timeLeft = _hero.TimeLeft;\n381:    _totalCostNeeded = Mathf.CeilToInt((timeLeft) / kTimeDecrease) * kBlueStarPerTime;\n382:    _costText.text = _totalCostNeeded.ToString ();\n383: \n384:    h.playSound (SoundManager.Instance.ClickySound);\n385: \n386:    var d = GameDataInst.Instance.Data;\n387:    if (d.TutorialStep == 6) {\n388:     Vector3 pos = transform.position;\n389:     pos.y += 0.7f;\n390:     pos.x -= 0.2f;\n391:     TutorialManager.Instance.Tutorial.showArrow (pos, 0f, null);\n392:    }\n393: \n394:             SetGameObjVisiable(bShow);\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\Forge.cs", 
+        "line": 451, 
+        "subid": "CS_checkNullDefect", 
+        "severity": "Critical", 
+        "msg": "It's wrong way to check if [_heros[0].Chips] is null.", 
+        "web_identify": "{\"identify\":\"_heros[0].Chips\"}", 
+        "func_info": "public void showUpgradeChip ( )", 
+        "content": "441:    // UIControl.Instance.ShowConfirmUI (StrInfoMgr.Instance.GetStr(\"ConfirmReplaceChip\"), this);\n442:    // return;\n443:    //}\n444: \n445:             GameNetManager.Instance.ReplaceChip(_heros[0], _heros[0].Chips.Count - 1, OnReplaceChipResponse);\n446: \n447:         }\n448: \n449:         public void showUpgradeChip()\n450:         {\n451:             if (_heros[0] != null && _heros[0].Chips.Count >= 1 && _heros[0].Chips != null && _heros[0].Chips[_heros[0].Chips.Count - 1] != null)\n452:             {\n453:                 Chip _chip = _heros[0].Chips[_heros[0].Chips.Count - 1];\n454:                 if (_chip.Level < Chip.MAX_CHIP_LEVEL)\n455:                 {\n456:                     DlgUpgradeChipConfirm.singleton.Show(_chip, _heros[0], _heros[0].Chips.Count - 1);\n457:                     if (!UIControl.Instance.ChipInfo.IsClosed)\n458:                     {\n459:                         UIControl.Instance.ChipInfo.close();\n460:                     }\n461:                 }\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\GameData.cs", 
+        "line": 1646, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [lastAreaInfo] suggests that it may be null, but it has already been dereferenced at line 1641.", 
+        "web_identify": "{\"identify\":\"lastAreaInfo\"}", 
+        "func_info": "public void NextLevel ( )", 
+        "content": "1636:             int _lastDifficulty = 0;\n1637:             if (lastAreaInfo.DiffFlag != 0)\n1638:             {\n1639:                 _lastDifficulty = 1;\n1640:             }\n1641:             if (lastAreaInfo.CrazyFlag != 0)\n1642:             {\n1643:                 _lastDifficulty = 2;\n1644:             }\n1645:             if (savedData._curLevelId >= 7 && savedData._curAreaId >= lastAreaInfo.Id && savedData._curDifficaulty == _lastDifficulty ||\n1646:                 lastAreaInfo == null)\n1647:             {\n1648:                 UIControl.Instance.showMapSelection();\n1649:                 return;\n1650:             }\n1651:             else\n1652:             {\n1653:                 if (savedData._curLevelId >= 7)\n1654:                 {\n1655:                     int _targetAreaId = savedData._curAreaId + 1;\n1656:                     int _targetDifficulty = 0;\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\GameData.cs", 
+        "line": 2462, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [u] suggests that it may be null, but it has already been dereferenced at line 2460.", 
+        "web_identify": "{\"identify\":\"u\"}", 
+        "func_info": "public void ResetHeroPveRoster ( )", 
+        "content": "2452:                 if (gf is BattleField)\n2453:                 {\n2454:                     BattleField bf = gf as BattleField;\n2455:                     u.WorldPos = bf.GetFieldCenterPosition();\n2456:                 }\n2457:                 else {\n2458:                     u.WorldPos = u.PveRosterPosition;\n2459:                 }\n2460:                 u.EnterField(gf);\n2461: \n2462:                 if (u != null && !u.gameObject.activeSelf)\n2463:                     u.gameObject.SetActive(true);\n2464:             }\n2465:         }\n2466: \n2467: #region \u9365\u70b4\u6579\u9362\u57ae\u6a0b\n2468:         public void ReclaimEnemy(GameObject enemyObj, float delay)\n2469:         {\n2470:             coroutineManager.StartCoroutine(delayReclaimEnemy(enemyObj, delay));\n2471:         }\n2472: \n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\GameDataInst.cs", 
+        "line": 761, 
+        "subid": "CS_checkNullDefect", 
+        "severity": "Critical", 
+        "msg": "It's wrong way to check if [Heroes[i]] is null.", 
+        "web_identify": "{\"identify\":\"Heroes[i]\"}", 
+        "func_info": "public bool HasHeroInExile ( )", 
+        "content": "751:    }\n752: \n753:             public bool HasFinishedTutorial() {\n754:                 return (TutorialStep < 0);\n755:             }\n756: \n757:             public bool HasHeroInExile() {\n758:                 bool res = false;\n759:                 for(int i = 0; i < Heroes.Count; i++)\n760:                 {\n761:                     if (Heroes[i] != null && (Heroes[i].CurField ==null||Heroes[i].CurField.FieldType== (short)(FB.FieldType.Exile))) {  //\u93c8\u590e\u5af3\u95c6\u52eb\u6e6a\u93c0\u9e43\u20ac\u612a\u7ba3\u9366?#xa;762:                         res = true;\n763:                         break;\n764:                     }\n765:                 }\n766:                 return res;\n767:             }\n768: \n769:             public void initWithProto(Bong.ClientLoginResponse res)\n770:             {\n771:                 //GameDataInst.kReplaceChipCost = res.ReplaceChipNeedMoney;\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\GroundField.cs", 
+        "line": 229, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [u] suggests that it may be null, but it has already been dereferenced at line 227.", 
+        "web_identify": "{\"identify\":\"u\"}", 
+        "func_info": "virtual public bool enterField ( Unit u )", 
+        "content": "219:   {\n220:    removeUnit(u);\n221:   }\n222: \n223:   virtual public bool enterField(Unit u)\n224:   {\n225:    addUnit(u);\n226:    u.transform.SetParent(transform, true);\n227:             u.transform.localScale = Vector3.one;\n228: \n229:             if(u!=null && u is Hero)\n230:             {\n231:                 FxConfig.Instance.MoveWakeEff(u as Hero, \"CameraUI\", 0);\n232: \n233:                 if ((u.IsInBattleField() || u.IsInBigActivityField() ||\n234:                     u.IsInPkField() || u.IsInTowerField()))\n235:                 {\n236:                     FxConfig.Instance.MoveWakeEff(u as Hero, \"Unit\", 99);\n237:                 }\n238:             }\n239:          \n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\UI\\HeroDeadMenuUI.cs", 
+        "line": 120, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [_hero] suggests that it may be null, but it has already been dereferenced at line 76.", 
+        "web_identify": "{\"identify\":\"_hero\"}", 
+        "func_info": "void Update ( )", 
+        "content": "110: \n111:      _costText.text = _totalCostNeeded.ToString ();\n112:      _lastCost = count;\n113:     }\n114:    } else {\n115:     float timeLeft = _hero.TimeLeft - Time.unscaledTime;\n116:     _totalCostNeeded = Mathf.CeilToInt((timeLeft) / kTimeDecrease) * kBlueStarPerTime;\n117:     _costText.text = _totalCostNeeded.ToString ();\n118:    }\n119: \n120:    if (_hero != null) {\n121:     Vector3 pos = _hero.transform.position;\n122:     pos.y += 1f;\n123:     transform.position = pos;\n124:    }\n125:    if (!isOver) {\n126:     var size = _timeBar.sizeDelta;\n127: \n128:     float timeLeft = _hero.TimeLeft - now;\n129: \n130:     size.x = timeLeft / _hero.RebirthTime * TimeBarWidth;\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\UI\\HeroDeadMenuUI.cs", 
+        "line": 163, 
+        "subid": "CS_dereferenceAfterNullCheck", 
+        "severity": "Serious", 
+        "msg": "Comparing [h] to null at line 147 implies that [h ]  might be null.Dereferencing null pointer [h].", 
+        "web_identify": "{\"identify\":\"h\"}", 
+        "func_info": "public void show ( Unit h , bool bShow )", 
+        "content": "153:    var size = _timeBar.sizeDelta;\n154:    size.x = (_hero.TimeLeft-Time.unscaledTime) / _hero.RebirthTime * TimeBarWidth;\n155:    _timeBar.sizeDelta = size;\n156: \n157:    _lastCost = -1;\n158:    _speed = _hero.RebirthTime * 0.3f;\n159:    float timeLeft = _hero.TimeLeft - Time.unscaledTime;\n160:    _totalCostNeeded = Mathf.CeilToInt((timeLeft) / kTimeDecrease) * kBlueStarPerTime;\n161:    _costText.text = _totalCostNeeded.ToString ();\n162: \n163:    h.playSound (SoundManager.Instance.ClickySound);\n164:   }\n165: \n166:   #region IClosableUI implementation\n167: \n168:   public bool close ()\n169:   {\n170:    gameObject.SetActive (false);\n171:    _hero.stopSound ();\n172:    return true;\n173:   }\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\UI\\HeroMenuUI.cs", 
+        "line": 71, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [h] suggests that it may be null, but it has already been dereferenced at line 68.", 
+        "web_identify": "{\"identify\":\"h\"}", 
+        "func_info": "public void show ( Unit h , bool bShow )", 
+        "content": "61: \n62:             if (_sortingLayer == 0)\n63:             {\n64:                 Canvas c = GetComponentInParent<Canvas>();\n65:                 _sortingLayer = c.sortingLayerID;\n66:                 _sortingOrder = c.sortingOrder;\n67:             }\n68:             h.playSound(SoundManager.Instance.ClickySound);\n69: \n70:             gameObject.SetActive(bShow);\n71:             if (h != null)\n72:             {\n73:                 Vector3 pos = h.transform.position;\n74:                 pos.y += 1f;\n75:                 transform.position = pos;\n76:             }\n77:             if (bShow)\n78:             {\n79:                 SoundManager.Instance.playSfx(ShowupSound);\n80:             }\n81: \n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\UI\\ItemUI.cs", 
+        "line": 672, 
+        "subid": "CS_dereferenceAfterNullCheck", 
+        "severity": "Serious", 
+        "msg": "Comparing [res] to null at line 666 implies that [res ]  might be null.Dereferencing null pointer [res].", 
+        "web_identify": "{\"identify\":\"res\"}", 
+        "func_info": "public void OnGetEggPoolActiveInfo ( bool success , object o )", 
+        "content": "662:             if (success)\n663:             {\n664:                 var res = o as Bong.GetActivityEggConfigResponse;\n665: \n666:                 if (null == res)\n667:                     _eggPoolLight.Play(\"Pool_Light\");\n668: \n669:                 try\n670:                 {\n671: \n672:                     var startTime = DateTime.Parse(res.StartTime);\n673:                     var endTime = DateTime.Parse(res.EndTime);\n674: \n675:                     var startSeconds = (startTime - new DateTime(1970, 1, 1)).TotalSeconds;\n676:                     var endSeconds = (endTime - new DateTime(1970, 1, 1)).TotalSeconds;\n677:                     var now = FakeDataInst.Instance.TimeFromGetServerTime;\n678: \n679:                     TipsDesc = res.Content;\n680:                     //if (now >= startSeconds && now < endSeconds)\n681:                     {\n682:                         //\u7487\u8bf2\u5f47WWW\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\UI\\PKUI.cs", 
+        "line": 291, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [tab] suggests that it may be null, but it has already been dereferenced at line 265.", 
+        "web_identify": "{\"identify\":\"tab\"}", 
+        "func_info": "private void setup ( )", 
+        "content": "281:             _tmpUnits.Clear();\n282:             foreach (Unit u in units)\n283:             {\n284:                 if (u is Hero)\n285:                 {\n286:                     PkUIController.SSlot s;\n287:                     if ((n & 0x1) == 0)\n288:                     {\n289:                         y = kStep;\n290:                         z = -0.1f;\n291:                         if (tab == null)\n292:                         {\n293:                             totalWidth += size.x + kPadding;\n294:                             tab = Instantiate(TabPref) as RectTransform;\n295:                             tab.SetParent(_scrollRect.content, false);\n296:                         }\n297:                         u.transform.SetParent(tab, false);\n298:                         s.parent = tab;\n299:                     }\n300:                     else\n301:                     {\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\Playgound.cs", 
+        "line": 77, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [otherUnit] suggests that it may be null, but it has already been dereferenced at line 75.", 
+        "web_identify": "{\"identify\":\"otherUnit\"}", 
+        "func_info": "public bool query ( int proxyId )", 
+        "content": "67:     return true;\n68:    }\n69: \n70:    Placeholder u2 = (Placeholder)_tree.GetUserData(proxyId);\n71:    if (u2.IsDeleted || _params.u1.IsDeleted) {\n72:     return true;\n73:    }\n74: \n75:    Unit otherUnit = (u2).Unit;\n76:    // do not collide with master\n77:    if (_params.curMaster == otherUnit && otherUnit != null)\n78:    {\n79:     return true;\n80:    }\n81:    Hero h = otherUnit as Hero;\n82:    if(otherUnit != null && otherUnit.IsSummon && h != null && ((Hero)otherUnit)._master == _params.curUnit)\n83:    {\n84:     return true;\n85:    }\n86: \n87:    if (u2.IsFlying) {\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\Tower\\TowerField.cs", 
+        "line": 424, 
+        "subid": "CS_dereferenceAfterNullCheck", 
+        "severity": "Serious", 
+        "msg": "Comparing [m_txtCountDown] to null at line 376 implies that [m_txtCountDown ]  might be null.Dereferencing null pointer [m_txtCountDown].", 
+        "web_identify": "{\"identify\":\"m_txtCountDown\"}", 
+        "func_info": "public void InitBattleUI ( )", 
+        "content": "414:                     if (name)\n415:                         m_txtBuffTipName = name.GetComponent<UnityEngine.UI.Text>();\n416: \n417:                     var desc = ctobj.findChild(\"BuffDes\");\n418:                     if (desc)\n419:                         m_txtBuffTipDesc = desc.GetComponent<UnityEngine.UI.Text>();\n420:                 }           \n421:             }\n422: \n423:             CloseBuffTips();\n424:             m_txtCountDown.text = \"\";\n425:             m_img_numberbg.SetActive(false);\n426:         }\n427: \n428:         public void InitBattleHeroes()\n429:         {\n430:             var heroIds = TowerController.Instance.ListHeroIds;\n431:             for (int i = 0; i < heroIds.Count; ++i)\n432:             {\n433:                 Vector2 pos = this.randomPos(0.5f, GroundField.ERandomPosition.leftHalf);\n434:                 var realHero = GameDataInst.Instance.GetHeroById(heroIds[i]);\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\Tower\\TowerField.cs", 
+        "line": 425, 
+        "subid": "CS_dereferenceAfterNullCheck", 
+        "severity": "Serious", 
+        "msg": "Comparing [m_img_numberbg] to null at line 369 implies that [m_img_numberbg ]  might be null.Dereferencing null pointer [m_img_numberbg].", 
+        "web_identify": "{\"identify\":\"m_img_numberbg\"}", 
+        "func_info": "public void InitBattleUI ( )", 
+        "content": "415:                         m_txtBuffTipName = name.GetComponent<UnityEngine.UI.Text>();\n416: \n417:                     var desc = ctobj.findChild(\"BuffDes\");\n418:                     if (desc)\n419:                         m_txtBuffTipDesc = desc.GetComponent<UnityEngine.UI.Text>();\n420:                 }           \n421:             }\n422: \n423:             CloseBuffTips();\n424:             m_txtCountDown.text = \"\";\n425:             m_img_numberbg.SetActive(false);\n426:         }\n427: \n428:         public void InitBattleHeroes()\n429:         {\n430:             var heroIds = TowerController.Instance.ListHeroIds;\n431:             for (int i = 0; i < heroIds.Count; ++i)\n432:             {\n433:                 Vector2 pos = this.randomPos(0.5f, GroundField.ERandomPosition.leftHalf);\n434:                 var realHero = GameDataInst.Instance.GetHeroById(heroIds[i]);\n435: \n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\Tower\\TowerField.cs", 
+        "line": 830, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [h] suggests that it may be null, but it has already been dereferenced at line 821.", 
+        "web_identify": "{\"identify\":\"h\"}", 
+        "func_info": "private IEnumerator HeroDelayRelive ( Hero h )", 
+        "content": "820:             jxEff.transform.SetParent(transform, false);\n821:             jxEff.transform.localPosition = h.RealPos;        // \u95c0\u6ec3\u511a\u6d63\u5d87\u7586\u6d93\u70d8\ue134\u6d5c\u00a4\u5af3\u95c6\u52ed\u6b91\u6d63\u5d87\u7586\n822: \n823:             yield return new WaitForSeconds(0.167f);\n824:             MyCode.SoundManager.Instance.playSoundUI(\"SoundFx/WXXMTower/tower_battle_mirror\");\n825: \n826:             yield return new WaitForSeconds(1f);    // \u7edb\u590a\u7ddf\u95c0\u6ec3\u511a\u9354\u3127\u657e\u93c0\u60e7\u756c\n827: \n828:             Destroy(jxEff);\n829:    \n830:    if(h)\n831:    {\n832:     \n833:     h.gameObject.SetActive(true);\n834:     h.switchTo(Unit.State.Attack, true);      // \u6fb6\u5d86\u693f\u935a\u5ea3\u73db\u9357\u51b2\u7d11\u6fee\u5b2b\u57ac\u93c2?#xa;835: \n836:     foreach(var e in Enemies)\n837:     {\n838:      var buffid = GetHHBuff(e);\n839: \n840:      Int32 nbuff = 0;\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\Scene\\Vine.cs", 
+        "line": 107, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [u] suggests that it may be null, but it has already been dereferenced at line 81.", 
+        "web_identify": "{\"identify\":\"u\"}", 
+        "func_info": "IEnumerator waitToDie ( Unit u )", 
+        "content": "97:     }\n98:     hitTime += dt;\n99:     if (hitTime >= DmgInterval && !isEnemy) {\n100:      hitTime = 0f;\n101:      doDmg (u);\n102:     }\n103:     yield return null;\n104:    }\n105: \n106:    finish ();\n107:    if (u != null) {\n108:     u.IsHoldByVine = false;\n109:     u.CanbeKnockedOff = true;\n110:     u.CanbeKnockedBack = true;\n111:    }\n112:    Scene.vineDestroy (this);\n113:   }\n114: \n115:   void doDmg(Unit u)\n116:   {\n117:    u.onHPChange (null, null, Dmg*u.FullHP, _placeholder.LocalPos, 0);\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\spine-unity\\Modules\\AttachmentTools\\AttachmentTools.cs", 
+        "line": 694, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [src.vertices] suggests that it may be null, but it has already been dereferenced at line 692.", 
+        "web_identify": "{\"identify\":\"src.vertices\"}", 
+        "func_info": "static void CloneVertexAttachment ( VertexAttachment src , VertexAttachment dest )", 
+        "content": "684:    CloneVertexAttachment(o, newPathAttachment);\n685: \n686:    return newPathAttachment;\n687:   }\n688: \n689:   static void CloneVertexAttachment (VertexAttachment src, VertexAttachment dest) {\n690:    dest.worldVerticesLength = src.worldVerticesLength;\n691:    if (src.bones != null)\n692:     dest.bones = src.vertices.Clone() as int[];\n693: \n694:    if (src.vertices != null)\n695:     dest.vertices = src.vertices.Clone() as float[];\n696:   }\n697: \n698: \n699:   #region Runtime Linked MeshAttachments\n700:   /// <summary>\n701:   /// Returns a new linked mesh linked to this MeshAttachment. It will be mapped to the AtlasRegion provided.</summary>\n702:   public static MeshAttachment GetLinkedMesh (this MeshAttachment o, string newLinkedMeshName, AtlasRegion region, bool inheritDeform = true) {\n703:    //if (string.IsNullOrEmpty(attachmentName)) throw new System.ArgumentException(\"attachmentName cannot be null or empty\", \"attachmentName\");\n704:    if (region == null) throw new System.ArgumentNullException(\"region\");\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\spine-unity\\Modules\\Ragdoll\\SkeletonRagdoll.cs", 
+        "line": 93, 
+        "subid": "CS_dereferenceAfterNullCheck", 
+        "severity": "Serious", 
+        "msg": "Comparing [targetSkeletonComponent] to null at line 92 implies that [targetSkeletonComponent ]  might be null.Dereferencing null pointer [targetSkeletonComponent].", 
+        "web_identify": "{\"identify\":\"targetSkeletonComponent\"}", 
+        "func_info": "IEnumerator Start ( )", 
+        "content": "83:   public bool IsActive { get { return this.isActive; } }\n84: \n85:   IEnumerator Start () {\n86:    if (parentSpaceHelper == null) {\n87:     parentSpaceHelper = (new GameObject(\"Parent Space Helper\")).transform;\n88:     parentSpaceHelper.hideFlags = HideFlags.HideInHierarchy;\n89:    }\n90: \n91:    targetSkeletonComponent = GetComponent<SkeletonRenderer>() as ISkeletonAnimation;\n92:    if (targetSkeletonComponent == null) Debug.LogError(\"Attached Spine component does not implement ISkeletonAnimation. This script is not compatible.\");\n93:    skeleton = targetSkeletonComponent.Skeleton;\n94: \n95:    if (applyOnStart) {\n96:     yield return null;\n97:     Apply();\n98:    }\n99:   }\n100: \n101:   #region API\n102:   public Rigidbody[] RigidbodyArray {\n103:    get {\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\spine-unity\\Modules\\Ragdoll\\SkeletonRagdoll2D.cs", 
+        "line": 104, 
+        "subid": "CS_dereferenceAfterNullCheck", 
+        "severity": "Serious", 
+        "msg": "Comparing [targetSkeletonComponent] to null at line 103 implies that [targetSkeletonComponent ]  might be null.Dereferencing null pointer [targetSkeletonComponent].", 
+        "web_identify": "{\"identify\":\"targetSkeletonComponent\"}", 
+        "func_info": "IEnumerator Start ( )", 
+        "content": "94:   IEnumerator Start () {\n95:    if (parentSpaceHelper == null) {\n96:     parentSpaceHelper = (new GameObject(\"Parent Space Helper\")).transform;\n97:     #if !FLIPDEBUG\n98:     parentSpaceHelper.hideFlags = HideFlags.HideInHierarchy;\n99:     #endif\n100:    }\n101: \n102:    targetSkeletonComponent = GetComponent<SkeletonRenderer>() as ISkeletonAnimation;\n103:    if (targetSkeletonComponent == null) Debug.LogError(\"Attached Spine component does not implement ISkeletonAnimation. This script is not compatible.\");\n104:    skeleton = targetSkeletonComponent.Skeleton;\n105: \n106:    #if FLIPDEBUG\n107:    skeleton.flipX = flipXInitially;\n108:    skeleton.flipY = flipYInitially;\n109:    #endif\n110: \n111:    if (applyOnStart) {\n112:     yield return null;\n113:     Apply();\n114:    }\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\XLua\\Src\\MethodWarpsCache.cs", 
+        "line": 480, 
+        "subid": "CS_dereferenceAfterNullCheck", 
+        "severity": "Serious", 
+        "msg": "Comparing [remove] to null at line 475 implies that [remove ]  might be null.Dereferencing null pointer [remove].", 
+        "web_identify": "{\"identify\":\"remove\"}", 
+        "func_info": "public LuaCSFunction GetEventWrap ( Type type , string eventName )", 
+        "content": "470:                     int start_idx = 0;\n471: \n472:                     MethodInfo add = eventInfo.GetAddMethod(true);\n473:                     MethodInfo remove = eventInfo.GetRemoveMethod(true);\n474: \n475:                     if (add == null && remove == null)\n476:                     {\n477:                         throw new Exception(type.Name + \"'s \" + eventName + \" has either add nor remove\");\n478:                     }\n479: \n480:                     bool is_static = add != null ? add.IsStatic : remove.IsStatic;\n481:                     if (!is_static) start_idx = 1;\n482: \n483:                     methodsOfType[eventName] = (L) =>\n484:                     {\n485:                         object obj = null;\n486: \n487:                         if (!is_static)\n488:                         {\n489:                             obj = translator.GetObject(L, 1, type);\n490:                             if (obj == null)\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\XLua\\Src\\Utils.cs", 
+        "line": 499, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [overloads] suggests that it may be null, but it has already been dereferenced at line 477.", 
+        "web_identify": "{\"identify\":\"overloads\"}", 
+        "func_info": "static void makeReflectionWrap ( RealStatePtr L , Type type , int cls_field , int cls_getter , int cls_setter , int obj_field , int obj_getter , int obj_setter , int obj_meta , out LuaCSFunction item_getter , out LuaCSFunction item_setter , BindingFlags access )", 
+        "content": "489: \n490:                 if ((method_name.StartsWith(\"add_\") || method_name.StartsWith(\"remove_\")) && method.IsSpecialName)\n491:                 {\n492:                     continue;\n493:                 }\n494: \n495:                 if (method_name.StartsWith(\"op_\") && method.IsSpecialName) // \u93bf\u5d84\u7d94\u7ed7?#xa;496:                 {\n497:                     if (InternalGlobals.supportOp.ContainsKey(method_name))\n498:                     {\n499:                         if (overloads == null)\n500:                         {\n501:                             overloads = new List<MemberInfo>();\n502:                             pending_methods.Add(method_key, overloads);\n503:                         }\n504:                         overloads.Add(method);\n505:                     }\n506:                     continue;\n507:                 }\n508:                 else if (method_name.StartsWith(\"get_\") && method.IsSpecialName && method.GetParameters().Length != 1) // getter of property\n509:                 {\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\XLua\\Src\\Utils.cs", 
+        "line": 891, 
+        "subid": "CS_dereferenceBeforeNullCheck", 
+        "severity": "Serious", 
+        "msg": "Null - checking [type] suggests that it may be null, but it has already been dereferenced at line 839 in function[makeReflectionWrap].", 
+        "web_identify": "{\"identify\":\"type\"}", 
+        "func_info": "public static void ReflectionWrap ( RealStatePtr L , Type type , bool privateAccessible )", 
+        "content": "881:             LuaAPI.lua_pushvalue(L, -3);\n882:             LuaAPI.lua_rawset(L, -3);\n883:             LuaAPI.lua_pop(L, 1);\n884:             LuaAPI.lua_rawset(L, obj_meta); // set __newindex\n885:             //finish init obj metatable\n886: \n887:             LuaAPI.xlua_pushasciistring(L, \"UnderlyingSystemType\");\n888:             translator.PushAny(L, type);\n889:             LuaAPI.lua_rawset(L, cls_field);\n890: \n891:             if (type != null && type.IsEnum())\n892:             {\n893:                 LuaAPI.xlua_pushasciistring(L, \"__CastFrom\");\n894:                 translator.PushFixCSFunction(L, genEnumCastFrom(type));\n895:                 LuaAPI.lua_rawset(L, cls_field);\n896:             }\n897: \n898:             //set cls_field to namespace\n899:             SetCSTable(L, type, cls_field);\n900:             //finish set cls_field to namespace\n901: \n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\UFO.cs", 
+        "line": 680, 
+        "subid": "CS_ConditionAlwaysTrue", 
+        "severity": "Serious", 
+        "msg": "Logical disjunction always evaluates to true: _curCatcher != 2 || _curCatcher != 5", 
+        "web_identify": "{\"identify\":\"_curCatcher != 2 || _curCatcher != 5\"}", 
+        "func_info": "public void startCatch ( )", 
+        "content": "670:                     GameNetManager.Instance.CatchEgg(_curCatcher, _catchedIndex, OnCatchEggResponse);\n671:                 else if(EggPool.PoolType == 2)\n672:                     GameNetManager.Instance.CatchEgg(_curCatcher, _catchedIndex, OnCatchMatResponse);\n673:             }\n674:                 \n675:         }\n676: \n677:         public void startCatch()\n678:         {\n679:             State = ClawState.Catching;\n680:             if (_curCatcher != 2 ||\n681:                 _curCatcher != 5)\n682:             {\n683:                 var motor = _slider.motor;\n684:                 motor.motorSpeed = 0f;\n685:                 _slider.motor = motor;\n686:             }\n687:         }\n688: \n689:         // call by catcher button\n690:         public void startDown()\n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\Util\\CanvasAdapt.cs", 
+        "line": 63, 
+        "subid": "CS_CheckIsKeyWord", 
+        "severity": "Serious", 
+        "msg": "Warning:The condition is always True and  the check of: [ is Transform] is redundant", 
+        "web_identify": "", 
+        "func_info": "private void AddToListPanel ( Transform father )", 
+        "content": "53:     private void AddToListPanel(Transform father)\n54:     {\n55:         for (int i = 0; i < father.childCount; i++)\n56:         {\n57:             Transform trans = father.GetChild(i);\n58:             if (trans is RectTransform)\n59:             {\n60:                 RectTransform rect = (RectTransform)trans;\n61:                 listPanel.Add(rect);\n62:             }\n63:             else if (trans is Transform)\n64:             {\n65:                 AddToListPanel(trans);\n66:             }\n67:         }\n68:     }\n69: \n70:     private Rect GetSafeArea()\n71:     {\n72:         float x, y, w, h;\n73: \n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Script\\Util\\RawCamAdapt.cs", 
+        "line": 74, 
+        "subid": "CS_CheckIsKeyWord", 
+        "severity": "Serious", 
+        "msg": "Warning:The condition is always True and  the check of: [ is Transform] is redundant", 
+        "web_identify": "", 
+        "func_info": "private void AddToListPanel ( Transform father )", 
+        "content": "64:     private void AddToListPanel(Transform father)\n65:     {\n66:         for (int i = 0; i < father.childCount; i++)\n67:         {\n68:             Transform trans = father.GetChild(i);\n69:             if (trans is RectTransform)\n70:             {\n71:                 RectTransform rect = (RectTransform)trans;\n72:                 listPanel.Add(rect);\n73:             }\n74:             else if (trans is Transform)\n75:             {\n76:                 AddToListPanel(trans);\n77:             }\n78:         }\n79:     }\n80: \n81:     private Rect GetSafeArea()\n82:     {\n83:         float x, y, w, h;\n84: \n"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Resources\\Lua\\Buff.lua.txt", 
+        "line": 120, 
+        "subid": "lua_UninitVar", 
+        "severity": "Serious", 
+        "msg": "Variable [eff] is assigned nil or not initialize in all branch", 
+        "web_identify": "{\"identify\":\"eff\"}", 
+        "func_info": "inner", 
+        "content": "110: \\012111:     return inner\\012112: end\\012113: \\012114: function Buff43_eff()\\012115:     local eff\\012116:     local function inner(state, caster, target)\\012117:         if state == 0 then -- add\\012118:             eff = target:spawnEffect(\"SpAtk/Hero67_spatk2\", 14, 0.1)\\012119:         elseif state == 1 then -- remove\\012120:             eff:finish()\\012121:         end\\012122:     end\\012123: \\012124:     return inner\\012125: end\\012126: \\012127: function Buff49_eff()\\012128:     local eff\\012129:     local function inner(state, caster, target)\\012130:         if state == 0 then -- add\\012"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Resources\\Lua\\Buff.lua.txt", 
+        "line": 133, 
+        "subid": "lua_UninitVar", 
+        "severity": "Serious", 
+        "msg": "Variable [eff] is assigned nil or not initialize in all branch", 
+        "web_identify": "{\"identify\":\"eff\"}", 
+        "func_info": "inner", 
+        "content": "123: \\012124:     return inner\\012125: end\\012126: \\012127: function Buff49_eff()\\012128:     local eff\\012129:     local function inner(state, caster, target)\\012130:         if state == 0 then -- add\\012131:             eff = target:spawnEffect(\"Effect/Buff/AtkValue\", 14, 0.1)\\012132:         elseif state == 1 then -- remove\\012133:             eff:finish()\\012134:         end\\012135:     end\\012136: \\012137:     return inner\\012138: end\\012139: \\012140: function Buff167_eff()\\012141:     local eff\\012142:     local function inner(state, caster, target)\\012143:         if state == 0 then -- add\\012"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Resources\\Lua\\Buff.lua.txt", 
+        "line": 146, 
+        "subid": "lua_UninitVar", 
+        "severity": "Serious", 
+        "msg": "Variable [eff] is assigned nil or not initialize in all branch", 
+        "web_identify": "{\"identify\":\"eff\"}", 
+        "func_info": "inner", 
+        "content": "136: \\012137:     return inner\\012138: end\\012139: \\012140: function Buff167_eff()\\012141:     local eff\\012142:     local function inner(state, caster, target)\\012143:         if state == 0 then -- add\\012144:             eff = target:spawnEffect(\"SpAtk/Hero82_spatk\", 1.5)\\012145:         elseif state == 1 then -- remove\\012146:             eff:finish()\\012147:         end\\012148:     end\\012149: \\012150:     return inner\\012151: end\\012152: \\012153: function Buff_passiveskill82eff()\\012154:     local eff\\012155:     local function inner(state, caster, target)\\012156:         if state == 0 then -- add\\012"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Resources\\Lua\\Buff.lua.txt", 
+        "line": 159, 
+        "subid": "lua_UninitVar", 
+        "severity": "Serious", 
+        "msg": "Variable [eff] is assigned nil or not initialize in all branch", 
+        "web_identify": "{\"identify\":\"eff\"}", 
+        "func_info": "inner", 
+        "content": "149: \\012150:     return inner\\012151: end\\012152: \\012153: function Buff_passiveskill82eff()\\012154:     local eff\\012155:     local function inner(state, caster, target)\\012156:         if state == 0 then -- add\\012157:             eff = target:spawnEffect(\"SpAtk/Hero82_spatk\", 5)\\012158:         elseif state == 1 then -- remove\\012159:             eff:finish()\\012160:         end\\012161:     end\\012162: \\012163:     return inner\\012164: end\\012165: \\012166: function Buff_passiveskill82()\\012167:     local timestamp = 0\\012168:     local function check()\\012169:         local curTime = CS.UnityEngine.Time.unscaledTime\\012"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Resources\\Lua\\Buff.lua.txt", 
+        "line": 205, 
+        "subid": "lua_UninitVar", 
+        "severity": "Serious", 
+        "msg": "Variable [eff] is assigned nil or not initialize in all branch", 
+        "web_identify": "{\"identify\":\"eff\"}", 
+        "func_info": "inner", 
+        "content": "195: \\012196:     return inner\\012197: end\\012198: \\012199: function Buff48_eff()\\012200:     local eff\\012201:     local function inner(state, caster, target)\\012202:         if state == 0 then -- add\\012203:             eff = target:spawnEffect(\"SpAtk/Hero71_spatk\", 12)\\012204:         elseif state == 1 then -- remove\\012205:             eff:finish()\\012206:             caster:castSpecialAttack(1, true)\\012207:         end\\012208:     end\\012209: \\012210:     return inner\\012211: end\\012212: \\012213: function Buff176_eff()\\012214:     local eff\\012215:     local function inner(state, caster, target)\\012"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Resources\\Lua\\Buff.lua.txt", 
+        "line": 219, 
+        "subid": "lua_UninitVar", 
+        "severity": "Serious", 
+        "msg": "Variable [eff] is assigned nil or not initialize in all branch", 
+        "web_identify": "{\"identify\":\"eff\"}", 
+        "func_info": "inner", 
+        "content": "209: \\012210:     return inner\\012211: end\\012212: \\012213: function Buff176_eff()\\012214:     local eff\\012215:     local function inner(state, caster, target)\\012216:         if state == 0 then -- add\\012217:             eff = target:spawnEffect(\"Effect/Buff/Poison\", 120)\\012218:         elseif state == 1 then -- remove\\012219:             eff:finish()\\012220:         end\\012221:     end\\012222:     return inner\\012223: end\\012224: \\012225: function Buff177_eff()\\012226:     local eff\\012227:     local function inner(state, caster, target)\\012228:         if state == 0 then -- add\\012229:             eff = target:spawnEffect(\"Effect/Buff/Burst\", 1)\\012"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Resources\\Lua\\Buff.lua.txt", 
+        "line": 231, 
+        "subid": "lua_UninitVar", 
+        "severity": "Serious", 
+        "msg": "Variable [eff] is assigned nil or not initialize in all branch", 
+        "web_identify": "{\"identify\":\"eff\"}", 
+        "func_info": "inner", 
+        "content": "221:     end\\012222:     return inner\\012223: end\\012224: \\012225: function Buff177_eff()\\012226:     local eff\\012227:     local function inner(state, caster, target)\\012228:         if state == 0 then -- add\\012229:             eff = target:spawnEffect(\"Effect/Buff/Burst\", 1)\\012230:         elseif state == 1 then -- remove\\012231:             eff:finish()\\012232:         end\\012233:     end\\012234:     return inner\\012235: end\\012236: \\012237: function Buff173_eff()\\012238:     local eff\\012239:     local function inner(state, caster, target)\\012240:         if state == 0 then -- add\\012241:             eff = target:spawnEffect(\"Effect/Buff/AtkValue\", 14)\\012"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Resources\\Lua\\Buff.lua.txt", 
+        "line": 243, 
+        "subid": "lua_UninitVar", 
+        "severity": "Serious", 
+        "msg": "Variable [eff] is assigned nil or not initialize in all branch", 
+        "web_identify": "{\"identify\":\"eff\"}", 
+        "func_info": "inner", 
+        "content": "233:     end\\012234:     return inner\\012235: end\\012236: \\012237: function Buff173_eff()\\012238:     local eff\\012239:     local function inner(state, caster, target)\\012240:         if state == 0 then -- add\\012241:             eff = target:spawnEffect(\"Effect/Buff/AtkValue\", 14)\\012242:         elseif state == 1 then -- remove\\012243:             eff:finish()\\012244:         end\\012245:     end\\012246:     return inner\\012247: end\\012248: \\012249: function Buff174_eff()\\012250:     local eff\\012251:     local function inner(state, caster, target)\\012252:         if state == 0 then -- add\\012253:             eff = target:spawnEffect(\"Effect/Buff/AtkValueUp\",10)\\012"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Resources\\Lua\\Buff.lua.txt", 
+        "line": 255, 
+        "subid": "lua_UninitVar", 
+        "severity": "Serious", 
+        "msg": "Variable [eff] is assigned nil or not initialize in all branch", 
+        "web_identify": "{\"identify\":\"eff\"}", 
+        "func_info": "inner", 
+        "content": "245:     end\\012246:     return inner\\012247: end\\012248: \\012249: function Buff174_eff()\\012250:     local eff\\012251:     local function inner(state, caster, target)\\012252:         if state == 0 then -- add\\012253:             eff = target:spawnEffect(\"Effect/Buff/AtkValueUp\",10)\\012254:         elseif state == 1 then -- remove\\012255:             eff:finish()\\012256:         end\\012257:     end\\012258:     return inner\\012259: end\\012260: \\012261: function Buff175_eff()\\012262:     local function inner(state, caster, target)\\012263:         if state == 0 then -- add\\012264: \\011\\011     local v3=CS.UnityEngine.Vector3(target.transform.position.x,target.transform.position.y ,0)\\012265:              CS.MyCode.HealEffectEmiter.Instance:emit(v3,1)       \\012"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Resources\\Lua\\Buff.lua.txt", 
+        "line": 287, 
+        "subid": "lua_UninitVar", 
+        "severity": "Serious", 
+        "msg": "Variable [eff] is assigned nil or not initialize in all branch", 
+        "web_identify": "{\"identify\":\"eff\"}", 
+        "func_info": "inner", 
+        "content": "277:     end\\012278:     return inner\\012279: end\\012280: \\012281: function Buff179_eff()\\012282: \\011local eff\\012283: \\011local function inner(state, caster, target)\\012284: \\011\\011if state == 0 then\\012285: \\011\\011\\011eff = target:spawnEffect(\"Effect/Buff/HpHeal\",120)\\012286: \\011\\011elseif state == 1 then\\012287: \\011\\011\\011eff:finish()\\012288: \\011\\011end\\012289: \\011end\\012290: \\011return inner\\012291: end\\012292: \\012293: function Buff184_eff()\\012294:     local eff\\012295:     local function inner(state, caster, target)\\012296:         if state == 0 then -- add\\012297:             eff = target:spawnEffectBody(\"Effect/Buff/WXXMWuDi\", 5, 0, 0.01, 0.4)\\012"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Resources\\Lua\\Buff.lua.txt", 
+        "line": 29, 
+        "subid": "lua_UninitVar", 
+        "severity": "Serious", 
+        "msg": "Variable [eff] is assigned nil or not initialize in all branch", 
+        "web_identify": "{\"identify\":\"eff\"}", 
+        "func_info": "inner", 
+        "content": "19: \\01220:     return inner\\01221: end\\01222: \\01223: function Buff35_eff()\\01224:     local eff\\01225:     local function inner(state, caster, target)\\01226:         if state == 0 then -- add\\01227:             eff = target:spawnEffect(\"Effect/Buff/Elec\", 14)\\01228:         elseif state == 1 then -- remove\\01229:             eff:finish()\\01230:         end\\01231:     end\\01232: \\01233:     return inner\\01234: end\\01235: function Buff_atkspeedup_eff()\\01236:     local eff\\01237:     local function inner(state, caster, target)\\01238:         if state == 0 then -- add\\01239:             eff = target:spawnEffect(\"Effect/Buff/AtkSpeedUp\", 14,0.1)\\012"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Resources\\Lua\\Buff.lua.txt", 
+        "line": 299, 
+        "subid": "lua_UninitVar", 
+        "severity": "Serious", 
+        "msg": "Variable [eff] is assigned nil or not initialize in all branch", 
+        "web_identify": "{\"identify\":\"eff\"}", 
+        "func_info": "inner", 
+        "content": "289: \\011end\\012290: \\011return inner\\012291: end\\012292: \\012293: function Buff184_eff()\\012294:     local eff\\012295:     local function inner(state, caster, target)\\012296:         if state == 0 then -- add\\012297:             eff = target:spawnEffectBody(\"Effect/Buff/WXXMWuDi\", 5, 0, 0.01, 0.4)\\012298:         elseif state == 1 then -- remove\\012299:             eff:finish()\\012300:         end\\012301:     end\\012302: \\012303:     return inner\\012304: end\\012305: \\012306: function Buff185_eff()\\012307:     local eff\\012308:     local function inner(state, caster, target)\\012309:         if state == 0 then -- add\\012"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Resources\\Lua\\Buff.lua.txt", 
+        "line": 312, 
+        "subid": "lua_UninitVar", 
+        "severity": "Serious", 
+        "msg": "Variable [eff] is assigned nil or not initialize in all branch", 
+        "web_identify": "{\"identify\":\"eff\"}", 
+        "func_info": "inner", 
+        "content": "302: \\012303:     return inner\\012304: end\\012305: \\012306: function Buff185_eff()\\012307:     local eff\\012308:     local function inner(state, caster, target)\\012309:         if state == 0 then -- add\\012310:             eff = target:spawnEffect(\"Effect/Buff/WXXMJiaSu\", 6)\\012311:         elseif state == 1 then -- remove\\012312:             eff:finish()\\012313:         end\\012314:     end\\012315: \\012316:     return inner\\012317: end\\012318: \\012319: function Buff186_eff()\\012320:     local eff\\012321:     local function inner(state, caster, target)\\012322:         if state == 0 then -- add\\012"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Resources\\Lua\\Buff.lua.txt", 
+        "line": 325, 
+        "subid": "lua_UninitVar", 
+        "severity": "Serious", 
+        "msg": "Variable [eff] is assigned nil or not initialize in all branch", 
+        "web_identify": "{\"identify\":\"eff\"}", 
+        "func_info": "inner", 
+        "content": "315: \\012316:     return inner\\012317: end\\012318: \\012319: function Buff186_eff()\\012320:     local eff\\012321:     local function inner(state, caster, target)\\012322:         if state == 0 then -- add\\012323:             eff = target:spawnEffect(\"Effect/Buff/WXXMXuanYun\", 2.5)\\012324:         elseif state == 1 then -- remove\\012325:             eff:finish()\\012326:         end\\012327:     end\\012328: \\012329:     return inner\\012330: end\\012331: \\012332: \\012333: --BUFF 91\\346\\236\\252\\345\\217\\215\\345\\274\\271\\012334: function Buff182_eff()\\012335:     local function inner(state, dmg)\\012"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Resources\\Lua\\Buff.lua.txt", 
+        "line": 381, 
+        "subid": "lua_UninitVar", 
+        "severity": "Serious", 
+        "msg": "Variable [eff] is assigned nil or not initialize in all branch", 
+        "web_identify": "{\"identify\":\"eff\"}", 
+        "func_info": "inner", 
+        "content": "371: \\012372: \\012373: function Buff189_eff()\\012374:     local eff\\012375:     local function inner(state, target)\\012376:         if state == 2 then -- add\\012377:             eff = target:spawnEffect(\"Effect/healEff\", 1.1) \\012378:             eff.transform:SetParent(target.transform)\\012379:             eff.transform.localPosition = CS.UnityEngine.Vector3(0,0,0)    \\012380:         elseif state == 3 then -- remove\\012381:             eff:finish()\\012382:         end\\012383:     end\\012384: \\012385:     return inner\\012386: end\\012387: \\012388: function Buff190_eff()\\012389:     local eff\\012390:     local function inner(state, target)\\012391:         if state == 2 then -- add\\012"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Resources\\Lua\\Buff.lua.txt", 
+        "line": 396, 
+        "subid": "lua_UninitVar", 
+        "severity": "Serious", 
+        "msg": "Variable [eff] is assigned nil or not initialize in all branch", 
+        "web_identify": "{\"identify\":\"eff\"}", 
+        "func_info": "inner", 
+        "content": "386: end\\012387: \\012388: function Buff190_eff()\\012389:     local eff\\012390:     local function inner(state, target)\\012391:         if state == 2 then -- add\\012392:             eff = target:spawnEffect(\"Effect/Buff/WXXMRaoluan\", 1.5) \\012393:             eff.transform:SetParent(target.transform)\\012394:             eff.transform.localPosition = CS.UnityEngine.Vector3(0,1,0)   \\012395:         elseif state == 4 then -- remove\\012396:             eff:finish()\\012397:         end\\012398:     end\\012399: \\012400:     return inner\\012401: end\\012402: \\012403: function Buff188_eff()\\012404:     local eff\\012405:     local function inner(state, target)\\012406:         if state == 2 then -- add\\012"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Resources\\Lua\\Buff.lua.txt", 
+        "line": 41, 
+        "subid": "lua_UninitVar", 
+        "severity": "Serious", 
+        "msg": "Variable [eff] is assigned nil or not initialize in all branch", 
+        "web_identify": "{\"identify\":\"eff\"}", 
+        "func_info": "inner", 
+        "content": "31:     end\\01232: \\01233:     return inner\\01234: end\\01235: function Buff_atkspeedup_eff()\\01236:     local eff\\01237:     local function inner(state, caster, target)\\01238:         if state == 0 then -- add\\01239:             eff = target:spawnEffect(\"Effect/Buff/AtkSpeedUp\", 14,0.1)\\01240:         elseif state == 1 then -- remove\\01241:             eff:finish()\\01242:         end\\01243:     end\\01244:     return inner\\01245: end\\01246: \\01247: function Buff37_eff()\\01248:     local eff\\01249:     local function inner(state, caster, target)\\01250:         if state == 0 then -- add\\01251:             eff = target:spawnEffect(\"Effect/Buff/AtkSpeed\", 14)\\012"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Resources\\Lua\\Buff.lua.txt", 
+        "line": 411, 
+        "subid": "lua_UninitVar", 
+        "severity": "Serious", 
+        "msg": "Variable [eff] is assigned nil or not initialize in all branch", 
+        "web_identify": "{\"identify\":\"eff\"}", 
+        "func_info": "inner", 
+        "content": "401: end\\012402: \\012403: function Buff188_eff()\\012404:     local eff\\012405:     local function inner(state, target)\\012406:         if state == 2 then -- add\\012407:             eff = target:spawnEffect(\"Effect/Buff/WXXMKuangbao\", 60)\\012408:             eff.transform:SetParent(target.transform)\\012409:             eff.transform.localPosition = CS.UnityEngine.Vector3(0,0,0)    \\012410:         elseif state == 3 then -- remove\\012411:             eff:finish()\\012412:         end\\012413:     end\\012414: \\012415:     return inner\\012416: end\\012"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Resources\\Lua\\Buff.lua.txt", 
+        "line": 53, 
+        "subid": "lua_UninitVar", 
+        "severity": "Serious", 
+        "msg": "Variable [eff] is assigned nil or not initialize in all branch", 
+        "web_identify": "{\"identify\":\"eff\"}", 
+        "func_info": "inner", 
+        "content": "43:     end\\01244:     return inner\\01245: end\\01246: \\01247: function Buff37_eff()\\01248:     local eff\\01249:     local function inner(state, caster, target)\\01250:         if state == 0 then -- add\\01251:             eff = target:spawnEffect(\"Effect/Buff/AtkSpeed\", 14)\\01252:         elseif state == 1 then -- remove\\01253:             eff:finish()\\01254:         end\\01255:     end\\01256:     return inner\\01257: end\\01258: \\01259: function Buff39_eff()\\01260:     local eff\\01261:     local function inner(state, caster, target)\\01262:         if state == 0 then -- add\\01263:             eff = target:spawnEffect(\"Effect/Buff/AtkValue\", 14)\\012"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Resources\\Lua\\Buff.lua.txt", 
+        "line": 65, 
+        "subid": "lua_UninitVar", 
+        "severity": "Serious", 
+        "msg": "Variable [eff] is assigned nil or not initialize in all branch", 
+        "web_identify": "{\"identify\":\"eff\"}", 
+        "func_info": "inner", 
+        "content": "55:     end\\01256:     return inner\\01257: end\\01258: \\01259: function Buff39_eff()\\01260:     local eff\\01261:     local function inner(state, caster, target)\\01262:         if state == 0 then -- add\\01263:             eff = target:spawnEffect(\"Effect/Buff/AtkValue\", 14)\\01264:         elseif state == 1 then -- remove\\01265:             eff:finish()\\01266:         end\\01267:     end\\01268:     return inner\\01269: end\\01270: \\01271: function Buff_atkvalueup_eff()\\01272:     local eff\\01273:     local function inner(state, caster, target)\\01274:         if state == 0 then -- add\\01275:             eff = target:spawnEffect(\"Effect/Buff/AtkValueUp\", 14)\\012"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Resources\\Lua\\Buff.lua.txt", 
+        "line": 77, 
+        "subid": "lua_UninitVar", 
+        "severity": "Serious", 
+        "msg": "Variable [eff] is assigned nil or not initialize in all branch", 
+        "web_identify": "{\"identify\":\"eff\"}", 
+        "func_info": "inner", 
+        "content": "67:     end\\01268:     return inner\\01269: end\\01270: \\01271: function Buff_atkvalueup_eff()\\01272:     local eff\\01273:     local function inner(state, caster, target)\\01274:         if state == 0 then -- add\\01275:             eff = target:spawnEffect(\"Effect/Buff/AtkValueUp\", 14)\\01276:         elseif state == 1 then -- remove\\01277:             eff:finish()\\01278:         end\\01279:     end\\01280: \\01281:     return inner\\01282: end\\01283: \\01284: function Buff_passiveskill65()\\01285:     local function inner(state, skillId)\\01286:         if state == 2 then\\01287:             if curUnit:canSkillBeCasted(skillId) then\\012"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Resources\\Lua\\egg10.lua.txt", 
+        "line": 1028, 
+        "subid": "lua_UninitVar", 
+        "severity": "Serious", 
+        "msg": "Variable [dir] is assigned nil or not initialize in all branch", 
+        "web_identify": "{\"identify\":\"dir\"}", 
+        "func_info": "actionFunc", 
+        "content": "1018:     local initstep = 0\\0121019: \\0121020:     local actionFunc = function(curIdx, action)\\0121021:         -- body   \\0121022:         if initstep == 0 then \\0121023:             if enemy == nil or enemy.IsDead then\\0121024:                 enemy = unit.NearestEnemy\\0121025:                 print(\"find enemy\")        \\0121026:             else        \\0121027:                 tpos = enemy.RealPos\\0121028:                 dir.x = tpos.x\\0121029:                 dir.y = tpos.y\\0121030:                 print(\"nonnil enemy\")\\0121031:             end\\0121032:         end\\0121033: \\0121034:         return true\\0121035:     end\\0121036: \\0121037:     local start_atk = function()\\0121038:         print(\"start atk\")\\012"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Resources\\Lua\\egg10.lua.txt", 
+        "line": 1131, 
+        "subid": "lua_UseVarAfterCheck", 
+        "severity": "Critical", 
+        "msg": "[curUnit] is used after check at line 1123", 
+        "web_identify": "{\"identify\":\"curUnit\"}", 
+        "func_info": "actionFunc", 
+        "content": "1121:     local actionFunc = function(curIdx, action)                \\0121122:         if action == 1 then\\0121123:           if curUnit ~= nil and not curUnit.IsDead then\\0121124:              y = curUnit.RealPos.y\\0121125:              x = curUnit.RealPos.x\\0121126:           end\\0121127:           if targetUnitof88 ~= nil and not targetUnitof88.IsDead then\\0121128:               y = targetUnitof88.RealPos.y\\0121129:               x = targetUnitof88.RealPos.x\\0121130:           end\\0121131:           curUnit:spawnAreaEffect(\"SpAtk/Hero88_spatk1\",x,y,true,0.5)\\0121132:         end\\0121133:         return true\\0121134:     end\\0121135: \\0121136:     function t.ShouldStart() \\0121137:         if atkTimer ~= 0 then\\0121138:             return false\\0121139:         end\\0121140: \\011\\011return true\\0121141:     end\\012"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Resources\\Lua\\egg10.lua.txt", 
+        "line": 1294, 
+        "subid": "lua_KeywordSpellWrongError", 
+        "severity": "Critical", 
+        "msg": "[ture] may be spelled wrong, do you mean keyword [true]?", 
+        "web_identify": "{\"identify\":\"ture\"}", 
+        "func_info": "t.Start", 
+        "content": "1284:     local posnull = CS.UnityEngine.Vector2(0,0)\\0121285: \\0121286:     function t.ShouldStart()   \\0121287:         return true   \\0121288:     end\\0121289: \\0121290:     function t.Start()\\0121291:         -- body\\0121292:         curUnit:playAnim(\"spatk\")\\0121293: \\011\\011curUnit:playSpSound(\"90_sp\")\\0121294:         ShouldStart = ture     \\0121295:         launched = false\\0121296:         time=0\\0121297:         bullet=nil\\0121298:     end\\0121299: \\0121300:     function t.Update()\\0121301:         local dt = getDeltaTime()\\0121302:         time = time + dt\\0121303: \\0121304:         if time > 2.6 then\\012"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Resources\\Lua\\egg10.lua.txt", 
+        "line": 1392, 
+        "subid": "lua_KeywordSpellWrongError", 
+        "severity": "Critical", 
+        "msg": "[ture] may be spelled wrong, do you mean keyword [true]?", 
+        "web_identify": "{\"identify\":\"ture\"}", 
+        "func_info": "t.Start", 
+        "content": "1382:     local scale=0.01\\0121383:     local ShouldStart = false\\0121384:     local launched = false\\0121385:     local targetpos = CS.UnityEngine.Vector3(0,0,0)\\0121386:     local startpos = CS.UnityEngine.Vector3(0,3,0)\\0121387: \\0121388:     function t.Start()\\0121389:         -- body\\0121390:         curUnit:playAnim(\"spatk\")\\0121391:         curUnit:playSpSound(\"87_sp\")\\0121392:         ShouldStart = ture     \\0121393:         launched = false\\0121394:         time = 0\\0121395:         bullet = nil\\0121396:     end\\0121397: \\0121398:     function t.Update()\\0121399:         local dt = getDeltaTime()\\0121400:         time = time + dt\\0121401: \\0121402:         if time > 3 then\\012"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\Assets\\Resources\\Lua\\egg10.lua.txt", 
+        "line": 543, 
+        "subid": "lua_UninitVar", 
+        "severity": "Serious", 
+        "msg": "Variable [eff2] is assigned nil or not initialize in all branch", 
+        "web_identify": "{\"identify\":\"eff2\"}", 
+        "func_info": "t.End", 
+        "content": "533: \\012534:         if time >= 5.5 then                                                          --\\346\\212\\200\\350\\203\\275\\347\\273\\223\\346\\235\\237\\012535:             time = 0\\012536:             return true\\012537:         end\\012538:     end\\012539: \\012540:     function t.End()\\012541:         if eff1 ~= nil then\\012542:             eff1:finish()\\012543:             eff2:finish()\\012544:         end\\012545:     end\\012546: \\012547:     return t\\012548: end \\012549: \\012550: --\\350\\215\\224\\345\\255\\220-\\351\\237\\263\\347\\272\\242\\350\\275\\256\\012551: function Hero73_spatk2()\\012552:     -- body\\012553:     local t = {}\\012"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\hotFixLua\\3.1\\hotfix_3.1_zhanglei_jira2285.lua", 
+        "line": 9, 
+        "subid": "lua_UseVarAfterCheck", 
+        "severity": "Critical", 
+        "msg": "[incubator] is used after check at line 5", 
+        "web_identify": "{\"identify\":\"incubator\"}", 
+        "func_info": "SetNull", 
+        "content": "1: -- jira_BZJ-2285 \\343\\200\\220\\345\\255\\265\\345\\214\\226\\343\\200\\221\\343\\200\\220ios\\343\\200\\221\\350\\233\\213\\346\\261\\240\\346\\212\\223\\345\\210\\260\\347\\232\\204\\350\\233\\213\\346\\227\\240\\346\\263\\225\\346\\213\\226\\345\\210\\260\\345\\255\\265\\345\\214\\226\\346\\261\\240\\351\\207\\214\\351\\235\\242\\357\\274\\210\\345\\201\\266\\347\\216\\260\\357\\274\\211\\0122: xlua.private_accessible(CS.MyCode.Incubator)\\0123: local SetNull = function(incubator)\\0124:     local UnitAnchorPonit\\0125:     if incubator ~= nil then \\0126:        UnitAnchorPonit = incubator.transform:findChild(\"UnitAnchorPonit\")\\0127: \\011end\\0128:     if UnitAnchorPonit ~= nil and UnitAnchorPonit.transform.childCount == 0 then\\0129:        incubator._egg = nil\\01210:     end\\01211: end\\01212: \\01213: \\01214: local GetIncubatorIsRealNull = function(incubator)\\01215:     local UnitAnchorPonit\\01216:     if incubator ~= nil then \\01217:        UnitAnchorPonit = incubator.transform:findChild(\"UnitAnchorPonit\")\\01218: \\011end\\01219:     if (incubator ~=nil and UnitAnchorPonit ~= nil and UnitAnchorPonit.transform.childCount == 0) then\\012"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\hotFixLua\\3.2\\hotfix_BattleField_3.2_zhanglei.lua", 
+        "line": 37, 
+        "subid": "lua_UseVarBeforeCheck", 
+        "severity": "Critical", 
+        "msg": "[h] is used at line 29 before check at line 37", 
+        "web_identify": "{\"identify\":\"h\"}", 
+        "func_info": "", 
+        "content": "27:         end\\01228:     end\\01229:     if h._Shark.Count > 0 then  \\01230:         for i = h._Shark.Count-1 , 0,-1 do\\01231:             if h._Shark[i] ~= nil and not h._Shark[i]:Equals(nil) then\\01232:                h._Shark[i]:Quit()\\01233:             end \\01234:         end\\01235:         h.Sons:Clear()\\01236:     end\\01237:     if h~=nil and h.Sons.Count > 0 then\\01238:         --\\351\\255\\224\\345\\244\\232\\345\\244\\232\\345\\214\\225\\351\\246\\226\\346\\256\\213\\347\\225\\231\\01239: \\011\\011for i = h.Sons.Count-1, 0,-1 do\\01240:             if h.Sons[i]~=nil and not h.Sons[i]:Equals(nil) then\\01241: \\011\\011\\011   print(\"\")\\01242:                 CS.UnityEngine.Object.Destroy(h.Sons[i].gameObject)\\01243:             end\\01244:         end\\01245:         h.Sons:Clear()\\01246:     end\\01247:  end)\\012"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\hotFixLua\\3.3\\hotfix_v3.3_SuperSDK_Callback.lua", 
+        "line": 9, 
+        "subid": "lua_UndeclaredVar", 
+        "severity": "Critical", 
+        "msg": "undeclared Variable [resultData] is used.", 
+        "web_identify": "{\"identify\":\"resultData\"}", 
+        "func_info": "", 
+        "content": "1: \\0122: -- Android & iOS\\0123: local util = require('xlua.util')\\0124: xlua.private_accessible(CS.SuperSDK_CallBack)\\0125: util.hotfix_ex(CS.SuperSDK_CallBack, \"OnCallBack\", function(self, moduleName, funcName, result)\\0126:     self:OnCallBack(moduleName, funcName, result)\\0127:     if moduleName:Equals(\"platform\") then\\0128:         if funcName:Equals(\"login\") then\\0129:             local code = tonumber(resultData[\"code\"])\\01210:             if code == 1 then\\01211:                 CS.Client.GameMain.GameStateManager.Instance:ChangeGameState(CS.Client.GameMain.EnumGameState.eGameState_GetServerList);\\01212:             end\\01213:         end\\01214:     end\\01215: end)\\012"
+      }, 
+      {
+        "file": "D:\\work\\code\\Bong\\trunk\\client\\hotFixLua\\3.4\\hotfix_DlgBigActivitySendItem_3.4_xiaofan(3.0).lua", 
+        "line": 18, 
+        "subid": "lua_UndeclaredVar", 
+        "severity": "Critical", 
+        "msg": "undeclared Variable [util] is used.", 
+        "web_identify": "{\"identify\":\"util\"}", 
+        "func_info": "", 
+        "content": "8: \\011if send ~= nil then\\0129: \\011\\011self:FreshHero(send.Heroes)\\01210: \\011\\011self._sendTime = send.SendTime\\01211: \\011\\011self:SetFreshTime(send.SendTime)\\01212: \\011else\\01213: \\011\\011self:SetState(CS.DlgBigActivitySendItem.SendState.ToSend)\\01214: \\011end\\01215: end)\\01216: \\01217: xlua.private_accessible(CS.LvYsInfoMgr)\\01218: util.hotfix_ex(CS.LvYsInfoMgr, 'GetYellowPreMin', function(self, level)\\01219: \\01220:     local yellowPreMin = 0\\01221: \\01222:     -- print('LUA LvYsInfoMgr GetYellowPreMin ================= 111111111111111111111111111111111111 =================', level)\\01223: \\01224:     if self.m_dictinfo.Count == 0 then\\01225:         self:load()\\01226:     end\\01227: \\01228:     -- print('LUA LvYsInfoMgr GetYellowPreMin ================= 222222222222222222222222222222222222 =================', self.m_dictinfo.Count)\\012"
+      }
+    ]
+  }
+}

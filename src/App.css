@@ -1,0 +1,39 @@
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+
+.module {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 500px;
+  background-color: #fff;
+}
+
+.delete {
+  float: right;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-color: transparent;
+}
+
+.delete:hover {
+  background-color: #ccc;
+}
+
+h3 {
+  margin-top: 5px;
+  margin-left: 10px
+}
+
+.content {
+  height: 100%;
+  padding: 20px;
+  background-color: #ccc;
+}
